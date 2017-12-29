@@ -57,10 +57,10 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "https://qiaoer2017.github.io/lingdong/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10360,18 +10360,85 @@ return jQuery;
 /***/ }),
 /* 3 */,
 /* 4 */,
-/* 5 */
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(6);
+__webpack_require__(10);
 
 __webpack_require__(0);
 
+var $htmlBody = $('html,body');
+var $input = $('input');
+var $inputWrapper = $input.parent('.input-wrapper');
+var $submitButton = $('.submit-button');
+var $navJoin = $('.nav-join');
+var $firstJoin = $('#join1');
+$(function () {
+    // join waitlist
+    $navJoin.click(function () {
+        scrollToElement($firstJoin);
+    });
+    $('#link1').click(function () {
+        scrollToElement($('.feature-item-1'));
+    });
+    $('#link2').click(function () {
+        scrollToElement($('.feature-item-2'));
+    });
+    $('#link3').click(function () {
+        scrollToElement($('.feature-item-3'));
+    });
+    //
+
+    // input框激活状态切换
+    $input.focus(function () {
+        $inputWrapper.addClass('active');
+    }).blur(function () {
+        $inputWrapper.removeClass('active');
+    });
+
+    // form表单提交
+    $submitButton.click(function () {
+        var $inputWrapper = $(this).siblings('.input-wrapper');
+        var $input = $inputWrapper.find('input');
+        var $form = $(this).parents('form');
+        var email = $input.val();
+
+        if (validate(email)) {
+            $form.submit();
+        } else {
+            $inputWrapper.addClass('error');
+            $input.on('input', function () {
+                var email = $input.val();
+                if (validate(email)) {
+                    $inputWrapper.addClass('active').removeClass('error');
+                } else {
+                    $inputWrapper.removeClass('active').addClass('error');
+                }
+            });
+        }
+    });
+});
+
+function validate(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email.toLowerCase());
+}
+
+function scrollToElement($el) {
+    $htmlBody.animate({
+        scrollTop: $el.offset().top - 59 + 'px'
+    });
+}
+
 /***/ }),
-/* 6 */
+/* 10 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
