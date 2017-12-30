@@ -1,0 +1,403 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang SC", "Helvetica Neue", "Helvetica", STHeiTi, "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /*chrome、safari*/
+  -moz-osx-font-smoothing: grayscale;
+  /*firefox*/
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+a {
+  color: #333333;
+  text-decoration: none; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px); }
+  .nav .nav-content {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto; }
+    .nav .nav-content .nav-list {
+      width: 100%;
+      height: 100%;
+      cursor: default;
+      text-align: right; }
+      .nav .nav-content .nav-list .nav-item {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        padding: 0 12px;
+        z-index: 1;
+        vertical-align: top; }
+        .nav .nav-content .nav-list .nav-item.nav-forward {
+          width: 118px;
+          float: left; }
+        .nav .nav-content .nav-list .nav-item .nav-link {
+          font-size: 16px;
+          color: #444;
+          display: inline-block;
+          line-height: 90px;
+          height: 100%;
+          opacity: 1;
+          -webkit-transition: opacity .2s;
+          transition: opacity .2s; }
+          .nav .nav-content .nav-list .nav-item .nav-link:hover {
+            opacity: .75; }
+          .nav .nav-content .nav-list .nav-item .nav-link.nav-link-forward {
+            position: relative;
+            width: 100%; }
+            .nav .nav-content .nav-list .nav-item .nav-link.nav-link-forward img {
+              position: absolute;
+              right: 0;
+              top: 33px;
+              width: 118px;
+              height: 24px; }
+
+footer {
+  height: 305px;
+  margin-top: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 70px;
+  background: #f6f8fa; }
+  footer .footer-content {
+    height: 100%;
+    max-width: 980px;
+    min-width: 768px;
+    margin: 0 auto;
+    cursor: default;
+    font-size: 0; }
+    footer .footer-content:after {
+      display: inline-block;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      content: '';
+      vertical-align: top; }
+    footer .footer-content .footer-column {
+      width: 33.3333%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 0 10px;
+      height: 100%;
+      vertical-align: top;
+      display: inline-block;
+      text-align: left; }
+      footer .footer-content .footer-column h5 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #333;
+        letter-spacing: .3em; }
+      footer .footer-content .footer-column ul {
+        font-size: 13px;
+        line-height: 34px;
+        color: #666; }
+        footer .footer-content .footer-column ul li .icon {
+          vertical-align: middle;
+          margin-right: 10px; }
+        footer .footer-content .footer-column ul li .weixin-container {
+          position: relative; }
+          footer .footer-content .footer-column ul li .weixin-container:hover .qrcode-container {
+            display: block; }
+          footer .footer-content .footer-column ul li .weixin-container .qrcode-container {
+            display: none;
+            width: 120px;
+            height: 120px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            background: #fff;
+            padding: 10px;
+            position: absolute;
+            bottom: 20px; }
+            footer .footer-content .footer-column ul li .weixin-container .qrcode-container .qrcode {
+              width: 100px;
+              height: 100px; }
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 640px; }
+  .main .portrait {
+    overflow: hidden; }
+    .main .portrait .move-img {
+      -webkit-transition: -webkit-transform 0.8s cubic-bezier(0, 0.54, 0, 1.18);
+      transition: -webkit-transform 0.8s cubic-bezier(0, 0.54, 0, 1.18);
+      transition: transform 0.8s cubic-bezier(0, 0.54, 0, 1.18);
+      transition: transform 0.8s cubic-bezier(0, 0.54, 0, 1.18), -webkit-transform 0.8s cubic-bezier(0, 0.54, 0, 1.18); }
+    .main .portrait .img-response {
+      position: relative;
+      display: block;
+      max-width: 80%;
+      margin: 0 auto;
+      height: auto; }
+    .main .portrait .enter-button {
+      position: absolute;
+      z-index: 2;
+      bottom: 30px;
+      right: 60px;
+      width: 60px;
+      height: 60px;
+      background: #D5E0EC;
+      border-radius: 30px;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease; }
+      .main .portrait .enter-button:hover {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        background: #cbd5e1; }
+      .main .portrait .enter-button .enter-img {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+  .main .epic {
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0, 0.54, 0, 1.18);
+    transition: -webkit-transform 0.8s cubic-bezier(0, 0.54, 0, 1.18);
+    transition: transform 0.8s cubic-bezier(0, 0.54, 0, 1.18);
+    transition: transform 0.8s cubic-bezier(0, 0.54, 0, 1.18), -webkit-transform 0.8s cubic-bezier(0, 0.54, 0, 1.18); }
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #fff; }
+    .hero .hero-boxed {
+      position: absolute;
+      top: 90px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px; }
+      .hero .hero-boxed .epic {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto; }
+        .hero .hero-boxed .epic .text-center {
+          position: absolute;
+          top: 50%;
+          margin-top: -200px;
+          width: 69%;
+          height: 400px;
+          text-align: center; }
+          .hero .hero-boxed .epic .text-center .space {
+            width: 100%;
+            height: 40px; }
+          .hero .hero-boxed .epic .text-center h2 {
+            font-weight: 600;
+            font-size: 36px;
+            margin: 0 0 .5em; }
+          .hero .hero-boxed .epic .text-center h1 {
+            font-weight: 600;
+            font-size: 100px;
+            line-height: 1;
+            margin: 0 0 .5em; }
+          .hero .hero-boxed .epic .text-center p {
+            width: 80%;
+            margin: 0 auto;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            padding: 0 10px;
+            line-height: 1.5;
+            font-size: 16px; }
+      .hero .hero-boxed .portrait {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60%;
+        height: 100%;
+        float: right;
+        background: #F5F5F5; }
+        .hero .hero-boxed .portrait .move-img {
+          position: absolute;
+          height: 100% !important;
+          left: 25%;
+          width: auto !important;
+          margin-left: -250px;
+          top: 0 !important; }
+  .separate {
+    width: 100%;
+    height: 80px; }
+  .exhibit-jd {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 65%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .exhibit-jd .portrait {
+      position: absolute;
+      top: 0;
+      left: -40px;
+      bottom: -40px;
+      width: 60%;
+      background: #000;
+      -webkit-box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.1);
+              box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.1);
+      overflow: hidden; }
+    .exhibit-jd .epic {
+      display: table;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40%;
+      height: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 40px; }
+      .exhibit-jd .epic .text-center {
+        display: table-cell;
+        vertical-align: middle;
+        width: 90%;
+        margin: 0 auto;
+        height: 400px;
+        text-align: left; }
+        .exhibit-jd .epic .text-center .space {
+          width: 100%;
+          height: 40px; }
+        .exhibit-jd .epic .text-center h2 {
+          font-weight: 600;
+          font-size: 36px;
+          margin: 0 0 .5em; }
+        .exhibit-jd .epic .text-center h1 {
+          font-weight: 600;
+          font-size: 100px;
+          line-height: 1;
+          text-align: left;
+          margin: 0 0 .5em; }
+        .exhibit-jd .epic .text-center p {
+          width: 80%;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          line-height: 1.5;
+          font-size: 16px; }
+  .container {
+    width: 100%;
+    height: 106%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 40px; }
+    .block-grey {
+      height: 100%;
+      background: #f6f8fa; }
+      .block-grey .separate {
+        height: 80px; }
+      .exhibit-world {
+        position: relative;
+        max-width: 1200px;
+        margin: 75px auto;
+        height: 65%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+        .exhibit-world .portrait {
+          position: absolute;
+          right: -40px;
+          bottom: -40px;
+          width: 60%;
+          background: #fff;
+          -webkit-box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.1);
+                  box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.1);
+          overflow: hidden; }
+        .exhibit-world .epic {
+          display: table;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 40%;
+          height: 100%; }
+          .exhibit-world .epic .text-center {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            height: 400px; }
+            .exhibit-world .epic .text-center .space {
+              width: 100%;
+              height: 40px; }
+            .exhibit-world .epic .text-center h2 {
+              font-weight: 600;
+              font-size: 36px;
+              margin: 0 0 .5em; }
+            .exhibit-world .epic .text-center h1 {
+              font-weight: 600;
+              font-size: 100px;
+              line-height: 1;
+              text-align: center;
+              margin: 0 0 .5em; }
+            .exhibit-world .epic .text-center p {
+              width: 80%;
+              margin: 0 auto;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box;
+              line-height: 1.5;
+              font-size: 16px; }

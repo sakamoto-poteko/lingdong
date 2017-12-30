@@ -10368,6 +10368,40 @@ __webpack_require__(4);
 
 __webpack_require__(0);
 
+$(function () {
+    var $moveImg = $('.move-img');
+    var $epic = $('.epic');
+    $moveImg.each(function () {
+        var top = -$(this).offset().top / 12;
+        $(this).css({
+            top: top + 'px'
+        });
+    });
+    $epic.each(function () {
+        var top = $(this).offset().top / 5;
+        $(this).css({
+            top: top + 'px'
+        });
+    });
+
+    move();
+    $(window).scroll(function () {
+        //输出垂直的滚动距离
+        console.log($(this).scrollTop());
+        move();
+    });
+
+    function move() {
+        var scrollTop = $(window).scrollTop();
+        var imgMoveDistance = scrollTop / 10;
+        var epicMoveDistance = scrollTop / 5;
+        setTimeout(function () {
+            $moveImg.css('transform', 'translate3d(0,' + imgMoveDistance + 'px,0)');
+            $epic.css('transform', 'translate3d(0,-' + epicMoveDistance + 'px,0)');
+        }, 100);
+    }
+});
+
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
