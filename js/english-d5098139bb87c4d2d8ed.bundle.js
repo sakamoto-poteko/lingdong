@@ -10434,7 +10434,7 @@ function validate(email) {
 function scrollToElement($el) {
     $htmlBody.animate({
         scrollTop: $el.offset().top - 59 + 'px'
-    });
+    }, 300);
 }
 
 /***/ }),

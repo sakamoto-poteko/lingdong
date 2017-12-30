@@ -341,14 +341,16 @@ body {
         background: url("http://upload-images.jianshu.io/upload_images/1767852-2f92088a9a1cd23e.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240") no-repeat center;
         background-size: cover; }
   .features {
-    width: 50%;
+    width: 60%;
+    min-width: 600px;
     margin: 0 auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 23px 0; }
+    padding: 23px 0;
+    text-align: center; }
     .features .f-item {
       display: inline-block;
-      width: 33.33333333%;
+      width: 32%;
       height: auto;
       margin: 23px 0;
       text-align: center; }
