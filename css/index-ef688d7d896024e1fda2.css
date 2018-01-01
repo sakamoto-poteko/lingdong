@@ -187,9 +187,9 @@ footer {
     .main .portrait .img-response {
       position: relative;
       display: block;
-      max-width: 80%;
-      margin: 0 auto;
-      height: auto; }
+      height: auto;
+      max-width: 50%;
+      margin: 0 26px; }
     .main .portrait .enter-button {
       position: absolute;
       z-index: 2;
@@ -268,14 +268,14 @@ footer {
         position: absolute;
         right: 0;
         top: 0;
-        width: 60%;
+        width: 100%;
         height: 100%;
         float: right;
         background: #F5F5F5; }
         .hero .hero-boxed .portrait .move-img {
           position: absolute;
           height: 100% !important;
-          left: 25%;
+          left: 60%;
           width: auto !important;
           margin-left: -250px;
           top: 0 !important; }
@@ -292,9 +292,8 @@ footer {
     .exhibit-jd .portrait {
       position: absolute;
       top: 0;
-      left: -40px;
       bottom: -40px;
-      width: 60%;
+      width: 100%;
       background: #000;
       -webkit-box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.1);
               box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.1);
@@ -315,7 +314,8 @@ footer {
         width: 90%;
         margin: 0 auto;
         height: 400px;
-        text-align: left; }
+        text-align: left;
+        color: #eee; }
         .exhibit-jd .epic .text-center .space {
           width: 100%;
           height: 40px; }
