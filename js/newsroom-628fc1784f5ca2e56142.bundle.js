@@ -60,18 +60,11 @@
 /******/ 	__webpack_require__.p = "https://qiaoer2017.github.io/lingdong/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(2);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
 var g;
@@ -96,6 +89,13 @@ try {
 
 module.exports = g;
 
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(2);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 2 */
@@ -10361,49 +10361,64 @@ return jQuery;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-__webpack_require__(4);
-
-__webpack_require__(0);
-
-$(function () {
-    var $moveImg = $('.move-img');
-    var $epic = $('.epic');
-    $moveImg.each(function () {
-        var top = -$(this).offset().top / 12;
-        $(this).css({
-            top: top + 'px'
-        });
-    });
-    $epic.each(function () {
-        var top = $(this).offset().top / 5;
-        $(this).css({
-            top: top + 'px'
-        });
-    });
-
-    move();
-    $(window).scroll(function () {
-        //输出垂直的滚动距离
-        console.log($(this).scrollTop());
-        move();
-    });
-
-    function move() {
-        var scrollTop = $(window).scrollTop();
-        var imgMoveDistance = scrollTop / 10;
-        var epicMoveDistance = scrollTop / 5;
-        setTimeout(function () {
-            $moveImg.css('transform', 'translate3d(0,' + imgMoveDistance + 'px,0)');
-            $epic.css('transform', 'translate3d(0,-' + epicMoveDistance + 'px,0)');
-        }, 100);
-    }
-});
+module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <ul class=\"nav-list\">\n            <li class=\"nav-item nav-forward\">\n                <a href=\"./index.html\" class=\"nav-link nav-link-forward\">\n                    <img src=\"" + __webpack_require__(4) + "\">\n                </a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./join.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n        </ul>\n    </div>\n</header>";
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjExOCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDExOCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+bG9nbzwvdGl0bGU+PHBhdGggZD0iTTUuMjQ3IDE1LjQ3N2MtMi4wMTQgMC0zLjM5LTEuNzI2LTMuMzktMy45NzJDMS44NTcgOS4yMzUgMy4yNyA3LjUgNS4yOCA3LjVjLjg4NiAwIDEuODIuMzM2IDIuNTM2Ljg5NWwuODA2LTEuMjhDNy42ODggNi4zIDYuMzggNS44NSA1LjE0IDUuODUgMi4yMTcgNS44NSAwIDguMzA1IDAgMTEuNTQ3YzAgMy4xOCAyLjE0NyA1LjYwMyA1LjA3NiA1LjYwMyAxLjI1IDAgMi42NC0uNDQ2IDMuNTYtMS4yNDdsLS44Mi0xLjMxM2MtLjY4Mi41MjctMS42NS44ODctMi41Ny44ODd6bTEzLjU3LTYuMDU4QzE4LjgxNyA3LjQ0IDE3LjUgNiAxNS4yMzUgNmgtMy42MDh2MTAuOTloMS44di00LjEyaDEuNDk1bDIuMTY2IDQuMTI0aDIuMTMybC0yLjQ2LTQuMzljMS4yOTUtLjUwNyAyLjA1OC0xLjY4NyAyLjA1OC0zLjE4NXpNMjQuOTY3IDZsLTMuNjUgMTAuOTg2aDEuODc4bC44NDgtMi43NmgzLjg4MmwuODU4IDIuNzZoMS45NzZsLTMuNy0xMC45ODRoLTIuMXptMTUuNDA3IDEuMzZWNi4wMDdIMzMuMTN2MS41OThoNC45NDVsLTUuMTI0IDguMDU4djEuMzMyaDcuNXYtMS42MTdoLTUuMjJsNS4xNi04LjAxNXptNi45NjUgMy4yNDNsLTIuNS00LjU5N2gtMi4wOWwzLjY0IDYuNDEzdjQuNTdoMS44MXYtNC41OEw1MS45MSA2aC0xLjk1NmwtMi42MTQgNC42em0xMi41Ny41NzRjLjc5LS40NCAxLjI0LTEuMjM3IDEuMjQtMi4zMiAwLTEuOC0xLjIzLTIuODUtMy4yOC0yLjg1aC0zLjR2MTAuOTg1aDMuOTdjMi4wMSAwIDMuMzUtMS4yOSAzLjM1LTMuMTEgMC0xLjM5Mi0uOC0yLjM4My0xLjg5OC0yLjcwNXpNNjggNi4wMDdsLTMuNjUgMTAuOTg1aDEuODc2bC44NS0yLjc2aDMuODhsLjg2IDIuNzZoMS45OEw3MC4xMDMgNi4wMDdINjguMDF6bTE0LjQ4NCA1LjE3Yy43OTItLjQ0IDEuMjQ3LTEuMjM3IDEuMjQ3LTIuMzIgMC0xLjgtMS4yMi0yLjg1LTMuMjgtMi44NWgtMy40djEwLjk4NWgzLjk4YzIuMDEgMCAzLjM2LTEuMjkgMy4zNi0zLjExIDAtMS4zOTItLjgtMi4zODMtMS44OS0yLjcwNXptOC41My0uNTc0bC0yLjQ5LTQuNTk2aC0yLjFsMy42NCA2LjQxM3Y0LjU3M2gxLjgxNVYxMi40MWwzLjctNi40MDNoLTEuOTVsLTIuNjIgNC41OTd6TTc4Ljg1MiA3LjYxOGgxLjM4YzEuMDEgMCAxLjY5Ny40MTIgMS42OTcgMS40MjIgMCAxLjA0Ny0uNzEgMS41NC0xLjYxIDEuNTRoLTEuNDdWNy42MTh6bTEuOTE1IDcuNzU0SDc4Ljg1di0zLjI1aDEuNzg3YzEuMTQ3IDAgMS45LjUyIDEuOSAxLjYzIDAgMS4xMS0uNzUzIDEuNjItMS43NzIgMS42MnpNNjcuNTUgMTIuNjc1bDEuNDYtNC43MjYgMS40OCA0LjcyaC0yLjk0ek01Ni4yNzYgNy42MThoMS4zOGMxLjAxIDAgMS42OTYuNDEyIDEuNjk2IDEuNDIyIDAgMS4wNDctLjcxIDEuNTQtMS42MDYgMS41NGgtMS40N1Y3LjYxOHptMS45MTUgNy43NTRoLTEuOTF2LTMuMjVoMS43OWMxLjE1IDAgMS45LjUyIDEuOSAxLjYzIDAgMS4xMS0uNzUgMS42Mi0xLjc3IDEuNjJ6bS0zMy42Ny0yLjY5N2wxLjQ2LTQuNzI2IDEuNDggNC43MmgtMi45NHpNMTUgMTEuMjQ1aC0xLjU3di0zLjYySDE1YzEuMjA3IDAgMS45OS42MTMgMS45OSAxLjgyIDAgMS4xNTMtLjcxIDEuNzk4LTEuOTkgMS43OTh6bTk2Ljk5NS03Ljg3NmMtLjczNS0uMjUtMS4wMjQtLjc5LTEuNDQyLTEuMzhhMy43NiAzLjc2IDAgMCAwLTEuODE4LTEuMzdjLjM0NiAxLjEyLS4zMTYgMi4zMy0xLjQzMyAyLjY2YTguNSA4LjUgMCAxIDAgNC42OTQuMDh6TTEwOS41MTcgMTdhMy44MjUgMy44MjUgMCAxIDEgMC03LjY1IDMuODI1IDMuODI1IDAgMCAxIDAgNy42NXoiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg=="
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<footer>\n    <div class=\"footer-content\">\n        <div class=\"footer-column\">\n            <h5>了解</h5>\n            <ul>\n                <li><a href=\"./consume.html\">行李箱</a></li>\n                <li><a href=\"./professional.html\">jd车</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <h5>关于灵动</h5>\n            <ul>\n                <li><a href=\"./about.html\">我们的故事</a></li>\n                <li><a href=\"./newsroom.html\">媒体信息</a></li>\n                <li><a href=\"./jobs.html\">工作机会</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <h5>联系灵动</h5>\n            <ul>\n                <li><a href=\"https://weibo.com/ForwardX\"><img class=\"icon\" src=\"" + __webpack_require__(6) + "\"/></a>\n                    <span class=\"weixin-container\">\n                            <img class=\"icon\" src=\"" + __webpack_require__(7) + "\"/>\n                            <span class=\"qrcode-container\">\n                                <img class=\"qrcode\" src=\"" + __webpack_require__(8) + "\">\n                            </span>\n                        </span>\n                </li>\n                <li></li>\n                <li>邮箱：yaxin@forwardx.ai</li>\n                <li>电话：010-52780030</li>\n                <li>地址：北京市海淀区世纪科贸大厦C2601</li>\n            </ul>\n        </div>\n    </div>\n</footer>";
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjI0IiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjQgMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPndlaWJvPC90aXRsZT48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0tMTAzMC01NUg0MTB2MjUwaC0xNDQweiIvPjxwYXRoIGQ9Ik0xNy4wMjQgOS4xODVjLS4yODItLjA5LS40NzUtLjE1LS4zMjctLjUzOC4zMi0uODQzLjM1Mi0xLjU3LjAwNi0yLjA5LS42NS0uOTcyLTIuNDI2LS45Mi00LjQ2Mi0uMDI1IDAgMC0uNjMuMjk0LS40Ny0uMjQuMzItMS4wNTUuMjctMS45NC0uMjItMi40NS0xLjEtMS4xNi00LjA0LjA0My02LjU2IDIuNjg1QzMuMSA4LjUwNyAyIDEwLjYwNSAyIDEyLjQyIDIgMTUuODkgNi4yNCAxOCAxMC4zOSAxOGM1LjQ0IDAgOS4wNTgtMy4zMTYgOS4wNTgtNS45NSAwLTEuNTktMS4yNzctMi40OTItMi40MjQtMi44NjV6bS02LjYyMiA3LjU3Yy0zLjMxLjM0NC02LjE3LTEuMjI2LTYuMzg0LTMuNTA3LS4yMTUtMi4yOCAyLjI5NS00LjQwOCA1LjYwNi00Ljc1IDMuMzEtLjM0NSA2LjE3IDEuMjI2IDYuMzg0IDMuNTA2LjIxNCAyLjI4LTIuMjk1IDQuNDA4LTUuNjA2IDQuNzUyem0xMC4yMzQtMTMuOTJjLTEuMzE0LTEuNTMtMy4yNS0yLjExMi01LjA0LTEuNzEzLS40MTQuMDkzLS42NzguNTItLjU5Ljk1My4wOS40MzQuNDk2LjcxLjkxLjYyIDEuMjcyLS4yODUgMi42NS4xMyAzLjU4MyAxLjIxNi45MyAxLjA5IDEuMTggMi41Ny43OCAzLjg3LS4xMy40Mi4wOS44OC40OSAxLjAxLjQuMTQuODMtLjA5Ljk2LS41MXYtLjAxYy41Ni0xLjgyLjItMy45LTEuMTEtNS40M3ptLTIuMzEgNS4wMDJhLjY1NC42NTQgMCAwIDAgLjgzLS40NDYgMi44MDIgMi44MDIgMCAwIDAtLjUzNy0yLjY0IDIuNTA0IDIuNTA0IDAgMCAwLTIuNDYtLjgzLjY5Mi42OTIgMCAwIDAtLjUxLjgzYy4wNy4zNy40Mi42MS43OC41M2ExLjIzIDEuMjMgMCAwIDEgMS4yLjQxYy4zMS4zNy4zOS44Ni4yNiAxLjMtLjExLjM3LjA4Ljc2LjQyLjg3em0tNy42ODYgMi40NDdjLTEuNjktLjQ2LTMuNi40MjMtNC4zMzUgMS45ODYtLjc0OCAxLjU5NC0uMDI1IDMuMzYzIDEuNjgzIDMuOTQyIDEuNzcuNTk4IDMuODU0LS4zMiA0LjU4LTIuMDQuNzE0LTEuNjgyLS4xNzgtMy40MTMtMS45MjgtMy44ODh6bS0xLjI5IDQuMDdjLS4zNDUuNTc2LTEuMDguODI4LTEuNjM0LjU2My0uNTQ3LS4yNi0uNzA4LS45My0uMzY0LTEuNDkuMzQtLjU2IDEuMDUtLjgwOCAxLjYtLjU2Ni41NTcuMjUuNzM1LjkyLjM5NyAxLjV6bTEuMTMtMS41MjNjLS4xMjMuMjMtLjM5OC4zMy0uNjEzLjI0LS4yMS0uMDktLjI3OC0uMzQtLjE1OC0uNTYuMTItLjIyLjM4LS4zMi41OS0uMjMuMjEuMDguMjkuMzQuMTcuNTZ6IiBmaWxsPSIjMDAwIi8+PC9nPjwvc3ZnPg=="
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/weixin.e9e735d.svg";
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/wechat-qrcode.3120d8a.jpg";
+
+/***/ }),
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(16);
+
+var nav = __webpack_require__(3);
+var footer = __webpack_require__(5);
+__webpack_require__(1);
+
+$(function () {
+    $('#nav').html(nav);
+    $('#footer').html(footer);
+});
+
+/***/ }),
+/* 16 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

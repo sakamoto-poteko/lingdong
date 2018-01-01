@@ -51,17 +51,13 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang SC", "Helvetica Neue", "Helvetica", STHeiTi, "Arial", sans-serif;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
   -webkit-font-smoothing: antialiased;
   /*chrome、safari*/
   -moz-osx-font-smoothing: grayscale;
   /*firefox*/
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+  -webkit-tap-highlight-color: transparent; }
 
 a {
   color: #333333;

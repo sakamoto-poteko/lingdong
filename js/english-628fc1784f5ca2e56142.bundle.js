@@ -60,18 +60,12 @@
 /******/ 	__webpack_require__.p = "https://qiaoer2017.github.io/lingdong/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 19);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ ({
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(2);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ }),
-/* 1 */
+/***/ 0:
 /***/ (function(module, exports) {
 
 var g;
@@ -98,7 +92,91 @@ module.exports = g;
 
 
 /***/ }),
-/* 2 */
+
+/***/ 1:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(2);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 19:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(20);
+
+__webpack_require__(1);
+
+var $htmlBody = $('html,body');
+var $input = $('input');
+var $inputWrapper = $input.parent('.input-wrapper');
+var $submitButton = $('.submit-button');
+var $navJoin = $('.nav-join');
+var $firstJoin = $('#join1');
+$(function () {
+    // join waitlist
+    $navJoin.click(function () {
+        scrollToElement($firstJoin);
+    });
+    $('#link1').click(function () {
+        scrollToElement($('.feature-item-1'));
+    });
+    $('#link2').click(function () {
+        scrollToElement($('.feature-item-2'));
+    });
+    $('#link3').click(function () {
+        scrollToElement($('.feature-item-3'));
+    });
+    //
+
+    // input框激活状态切换
+    $input.focus(function () {
+        $inputWrapper.addClass('active');
+    }).blur(function () {
+        $inputWrapper.removeClass('active');
+    });
+
+    // form表单提交
+    $submitButton.click(function () {
+        var $inputWrapper = $(this).siblings('.input-wrapper');
+        var $input = $inputWrapper.find('input');
+        var $form = $(this).parents('form');
+        var email = $input.val();
+
+        if (validate(email)) {
+            $form.submit();
+        } else {
+            $inputWrapper.addClass('error');
+            $input.on('input', function () {
+                var email = $input.val();
+                if (validate(email)) {
+                    $inputWrapper.addClass('active').removeClass('error');
+                } else {
+                    $inputWrapper.removeClass('active').addClass('error');
+                }
+            });
+        }
+    });
+});
+
+function validate(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email.toLowerCase());
+}
+
+function scrollToElement($el) {
+    $htmlBody.animate({
+        scrollTop: $el.offset().top - 59 + 'px'
+    }, 300);
+}
+
+/***/ }),
+
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10358,25 +10436,12 @@ return jQuery;
 
 
 /***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-__webpack_require__(8);
-
-__webpack_require__(0);
-
-/***/ }),
-/* 8 */
+/***/ 20:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
-/******/ ]);
+
+/******/ });
