@@ -10361,7 +10361,7 @@ return jQuery;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <div class=\"logo\">\n            <a href=\"./index.html\">\n                <img src=\"" + __webpack_require__(4) + "\">\n            </a>\n        </div>\n        <input type=\"checkbox\" id=\"mobile-menu\">\n        <label for=\"mobile-menu\">\n            <div class=\"bread\">\n                <div class=\"bread-line line1\"></div>\n                <div class=\"bread-line line2\"></div>\n                <div class=\"bread-line line3\"></div>\n            </div>\n        </label>\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n                <a href=\"./consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./join.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n        </ul>\n    </div>\n</header>";
+module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <div class=\"logo\">\n            <a href=\"./index.html\">\n                <img src=\"" + __webpack_require__(4) + "\">\n            </a>\n        </div>\n        <input type=\"checkbox\" id=\"mobile-menu\">\n        <label for=\"mobile-menu\">\n            <div class=\"bread\">\n                <div class=\"bread-line line1\"></div>\n                <div class=\"bread-line line2\"></div>\n                <div class=\"bread-line line3\"></div>\n            </div>\n        </label>\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n                <a href=\"./consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./jobs.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n        </ul>\n    </div>\n</header>";
 
 /***/ }),
 /* 4 */
@@ -10411,13 +10411,13 @@ __webpack_require__(16);
 var nav = __webpack_require__(3);
 var footer = __webpack_require__(5);
 __webpack_require__(1);
-var $missionContent = $('.mission-content').eq(0);
-var $missionContentTop = $missionContent.offset().top;
-var $missionContentHeight = $missionContent.height();
-var $window = $(window);
-var $hillBg = $('.hill-bg').eq(0);
-var $hillBgTop = $hillBg.offset().top;
-var navHeight = 90;
+// const $missionContent = $('.mission-content').eq(0);
+// const $missionContentTop = $missionContent.offset().top;
+// const $missionContentHeight = $missionContent.height();
+// const $window = $(window);
+// const $hillBg = $('.hill-bg').eq(0);
+// const $hillBgTop = $hillBg.offset().top;
+// const navHeight = 90;
 
 $(function () {
     $('#nav').html(nav);
@@ -10436,7 +10436,7 @@ $(function () {
         var translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
         $('.bg').css({
-            '-webit-transform': translate,
+            '-webkit-transform': translate,
             '-moz-transform': translate,
             'transform': translate
         });
@@ -10452,16 +10452,16 @@ $(function () {
 
     // 窗口滚动
 
-    var startScrollPosition = $missionContentTop - navHeight;
-    var endScrollPosition = $hillBgTop - $missionContentHeight - navHeight;
-    var scrollOffset = $missionContentTop - navHeight;
+    /*const startScrollPosition = $missionContentTop - navHeight;
+    const endScrollPosition = $hillBgTop - $missionContentHeight - navHeight;
+    const scrollOffset = $missionContentTop - navHeight;
     $(window).scroll(function () {
-        var windowScrollTop = $window.scrollTop();
+        let windowScrollTop = $window.scrollTop();
         if (windowScrollTop > startScrollPosition && windowScrollTop < endScrollPosition) {
-            var missionMoveDistance = windowScrollTop - scrollOffset;
-            $missionContent.css('transform', 'translate3d(0,' + missionMoveDistance + 'px,0)');
+            let missionMoveDistance = windowScrollTop - scrollOffset;
+            $missionContent.css('transform', `translate3d(0,${missionMoveDistance}px,0)`);
         }
-    });
+    });*/
 });
 
 /***/ }),

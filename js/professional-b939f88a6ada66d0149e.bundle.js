@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "https://qiaoer2017.github.io/lingdong/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 13);
+/******/ 	return __webpack_require__(__webpack_require__.s = 30);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10361,7 +10361,7 @@ return jQuery;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <div class=\"logo\">\n            <a href=\"./index.html\">\n                <img src=\"" + __webpack_require__(4) + "\">\n            </a>\n        </div>\n        <input type=\"checkbox\" id=\"mobile-menu\">\n        <label for=\"mobile-menu\">\n            <div class=\"bread\">\n                <div class=\"bread-line line1\"></div>\n                <div class=\"bread-line line2\"></div>\n                <div class=\"bread-line line3\"></div>\n            </div>\n        </label>\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n                <a href=\"./consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./join.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n        </ul>\n    </div>\n</header>";
+module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <div class=\"logo\">\n            <a href=\"./index.html\">\n                <img src=\"" + __webpack_require__(4) + "\">\n            </a>\n        </div>\n        <input type=\"checkbox\" id=\"mobile-menu\">\n        <label for=\"mobile-menu\">\n            <div class=\"bread\">\n                <div class=\"bread-line line1\"></div>\n                <div class=\"bread-line line2\"></div>\n                <div class=\"bread-line line3\"></div>\n            </div>\n        </label>\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n                <a href=\"./consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./jobs.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n        </ul>\n    </div>\n</header>";
 
 /***/ }),
 /* 4 */
@@ -10410,13 +10410,30 @@ module.exports = __webpack_require__.p + "img/wechat-qrcode.3120d8a.jpg";
 /***/ }),
 /* 11 */,
 /* 12 */,
-/* 13 */
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(14);
+__webpack_require__(31);
 
 var nav = __webpack_require__(3);
 var footer = __webpack_require__(5);
@@ -10427,21 +10444,6 @@ $(function () {
 
     $('#nav').html(nav);
     $('#footer').html(footer);
-
-    var $indicatorItem = $('.indicator-item');
-    var $carouselItem = $('.carousel-item');
-
-    $indicatorItem.click(function () {
-        var index = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-        var $currentItem = $carouselItem.eq(index);
-        $currentItem.siblings().animate({
-            opacity: 0
-        }, 1000);
-        $currentItem.animate({
-            opacity: 1
-        }, 1000);
-    });
 
     // aos滚动动画
     AOS.init({
@@ -10455,7 +10457,7 @@ $(function () {
 });
 
 /***/ }),
-/* 14 */
+/* 31 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

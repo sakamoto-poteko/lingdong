@@ -51,7 +51,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
+  font-family: 'Aspira Nar', 'PingFang SC', 'Fang Song', Dengxian, 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
   -webkit-font-smoothing: antialiased;
   /*chrome、safari*/
   -moz-osx-font-smoothing: grayscale;
@@ -303,6 +303,8 @@ footer {
             line-height: 1.27273;
             letter-spacing: .005em;
             color: #ccc; }
+          footer .footer-content .footer-column ul li a {
+            cursor: pointer; }
       footer .footer-content .footer-column input[type="checkbox"] {
         width: 0;
         height: 0;
@@ -325,7 +327,7 @@ footer {
       left: 20px;
       right: 20px;
       bottom: 20px;
-      background: url(https://qiaoer2017.github.io/lingdong/img/cover.9dd3e4e.jpg) no-repeat center top;
+      background: url(https://qiaoer2017.github.io/lingdong/img/cover.8e4ef7e.jpg) no-repeat center top;
       background-size: cover; }
       @media screen and (max-width: 768px) {
         .main .hero .bg {
