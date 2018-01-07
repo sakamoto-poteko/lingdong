@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "https://qiaoer2017.github.io/lingdong/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 13);
+/******/ 	return __webpack_require__(__webpack_require__.s = 17);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10361,7 +10361,7 @@ return jQuery;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <ul class=\"nav-list\">\n            <li class=\"nav-item nav-forward\">\n                <a href=\"./index.html\" class=\"nav-link nav-link-forward\">\n                    <img src=\"" + __webpack_require__(4) + "\">\n                </a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./join.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n        </ul>\n    </div>\n</header>";
+module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <div class=\"logo\">\n            <a href=\"./index.html\">\n                <img src=\"" + __webpack_require__(4) + "\">\n            </a>\n        </div>\n        <input type=\"checkbox\" id=\"mobile-menu\">\n        <label for=\"mobile-menu\">\n            <div class=\"bread\">\n                <div class=\"bread-line line1\"></div>\n                <div class=\"bread-line line2\"></div>\n                <div class=\"bread-line line3\"></div>\n            </div>\n        </label>\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n                <a href=\"./consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"./join.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n        </ul>\n    </div>\n</header>";
 
 /***/ }),
 /* 4 */
@@ -10373,7 +10373,7 @@ module.exports = __webpack_require__.p + "img/logo.d6c042c.png";
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<footer>\n    <div class=\"footer-content\">\n        <div class=\"footer-column\">\n            <h5>了解</h5>\n            <ul>\n                <li><a href=\"./consume.html\">行李箱</a></li>\n                <li><a href=\"./professional.html\">jd车</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <h5>关于灵动</h5>\n            <ul>\n                <li><a href=\"./about.html\">我们的故事</a></li>\n                <li><a href=\"./newsroom.html\">媒体信息</a></li>\n                <li><a href=\"./jobs.html\">工作机会</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <h5>联系灵动</h5>\n            <ul>\n                <li><a href=\"https://weibo.com/ForwardX\"><img class=\"icon\" src=\"" + __webpack_require__(6) + "\"/></a>\n                    <span class=\"weixin-container\">\n                            <img class=\"icon\" src=\"" + __webpack_require__(7) + "\"/>\n                            <span class=\"qrcode-container\">\n                                <img class=\"qrcode\" src=\"" + __webpack_require__(8) + "\">\n                            </span>\n                        </span>\n                </li>\n                <li></li>\n                <li>邮箱：yaxin@forwardx.ai</li>\n                <li>电话：010-52780030</li>\n                <li>地址：北京市海淀区世纪科贸大厦C2601</li>\n            </ul>\n        </div>\n    </div>\n</footer>";
+module.exports = "<footer>\n    <div class=\"footer-content\">\n        <div class=\"footer-column\">\n            <label for=\"know\">\n                <h5>了解</h5>\n            </label>\n            <input type=\"checkbox\" id=\"know\">\n            <ul>\n                <li><a href=\"./consume.html\">CX-1</a></li>\n                <li><a href=\"./professional.html\">仓储协作机器人</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <label for=\"about\">\n                <h5>关于灵动</h5>\n            </label>\n            <input type=\"checkbox\" id=\"about\">\n            <ul>\n                <li><a href=\"./about.html\">我们的故事</a></li>\n                <li><a href=\"./newsroom.html\">媒体信息</a></li>\n                <li><a href=\"./jobs.html\">工作机会</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <!--<label for=\"contact\">-->\n            <h5>联系灵动</h5>\n            <!--</label>-->\n            <!--<input type=\"checkbox\" id=\"contact\">-->\n            <ul>\n                <li class=\"share contact\">\n                    <a href=\"https://weibo.com/ForwardX\"><img class=\"icon\" src=\"" + __webpack_require__(6) + "\"/></a>\n                    <span class=\"weixin-container\">\n                        <img class=\"icon\" src=\"" + __webpack_require__(7) + "\"/>\n                        <span class=\"qrcode-container\">\n                            <img class=\"qrcode\" src=\"" + __webpack_require__(8) + "\">\n                        </span>\n                    </span>\n                </li>\n                <li class=\"contact\"></li>\n                <li class=\"contact\">邮箱：yaxin@forwardx.ai</li>\n                <li class=\"contact\">电话：010-52780030</li>\n                <li class=\"contact\">地址：北京市海淀区世纪科贸大厦C2601</li>\n                <li class=\"copyright contact\">Copyright © 2018 Forward Inc. All rights reserved.</li>\n            </ul>\n        </div>\n    </div>\n</footer>";
 
 /***/ }),
 /* 6 */
@@ -10398,72 +10398,29 @@ module.exports = __webpack_require__.p + "img/wechat-qrcode.3120d8a.jpg";
 /* 10 */,
 /* 11 */,
 /* 12 */,
-/* 13 */
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(14);
+__webpack_require__(18);
 
 var nav = __webpack_require__(3);
 var footer = __webpack_require__(5);
 __webpack_require__(1);
-var $missionContent = $('.mission-content').eq(0);
-var $missionContentTop = $missionContent.offset().top;
-var $missionContentHeight = $missionContent.height();
-var $window = $(window);
-var $hillBg = $('.hill-bg').eq(0);
-var $hillBgTop = $hillBg.offset().top;
-var navHeight = 90;
 
 $(function () {
     $('#nav').html(nav);
     $('#footer').html(footer);
-
-    // 全屏背景图片随鼠标晃动效果
-    var lFollowX = 0,
-        lFollowY = 0,
-        x = 0,
-        y = 0,
-        friction = 1 / 30;
-    (function moveBackground() {
-        x += (lFollowX - x) * friction;
-        y += (lFollowY - y) * friction;
-
-        var translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-
-        $('.bg').css({
-            '-webit-transform': translate,
-            '-moz-transform': translate,
-            'transform': translate
-        });
-
-        window.requestAnimationFrame(moveBackground);
-    })();
-    $('.bg').on('mousemove click', function (e) {
-        var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-        var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-        lFollowX = 20 * lMouseX / 100;
-        lFollowY = 10 * lMouseY / 100;
-    });
-
-    // 窗口滚动
-
-    var startScrollPosition = $missionContentTop - navHeight;
-    var endScrollPosition = $hillBgTop - $missionContentHeight - navHeight;
-    var scrollOffset = $missionContentTop - navHeight;
-    $(window).scroll(function () {
-        var windowScrollTop = $window.scrollTop();
-        if (windowScrollTop > startScrollPosition && windowScrollTop < endScrollPosition) {
-            var missionMoveDistance = windowScrollTop - scrollOffset;
-            $missionContent.css('transform', 'translate3d(0,' + missionMoveDistance + 'px,0)');
-        }
-    });
 });
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
