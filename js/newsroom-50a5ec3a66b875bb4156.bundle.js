@@ -57,10 +57,10 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://qiaoer2017.github.io/lingdong/";
+/******/ 	__webpack_require__.p = "http://forwardx.com";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 15);
+/******/ 	return __webpack_require__(__webpack_require__.s = 17);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10400,72 +10400,27 @@ module.exports = __webpack_require__.p + "img/weixin.e9e735d.svg";
 /* 12 */,
 /* 13 */,
 /* 14 */,
-/* 15 */
+/* 15 */,
+/* 16 */,
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(16);
+__webpack_require__(18);
 
 var nav = __webpack_require__(5);
 var footer = __webpack_require__(6);
 __webpack_require__(3);
-// const $missionContent = $('.mission-content').eq(0);
-// const $missionContentTop = $missionContent.offset().top;
-// const $missionContentHeight = $missionContent.height();
-// const $window = $(window);
-// const $hillBg = $('.hill-bg').eq(0);
-// const $hillBgTop = $hillBg.offset().top;
-// const navHeight = 90;
 
 $(function () {
     $('#nav').html(nav);
     $('#footer').html(footer);
-
-    // 全屏背景图片随鼠标晃动效果
-    var lFollowX = 0,
-        lFollowY = 0,
-        x = 0,
-        y = 0,
-        friction = 1 / 30;
-    (function moveBackground() {
-        x += (lFollowX - x) * friction;
-        y += (lFollowY - y) * friction;
-
-        var translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-
-        $('.bg').css({
-            '-webkit-transform': translate,
-            '-moz-transform': translate,
-            'transform': translate
-        });
-
-        window.requestAnimationFrame(moveBackground);
-    })();
-    $('.bg').on('mousemove click', function (e) {
-        var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-        var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-        lFollowX = 20 * lMouseX / 100;
-        lFollowY = 10 * lMouseY / 100;
-    });
-
-    // 窗口滚动
-
-    /*const startScrollPosition = $missionContentTop - navHeight;
-    const endScrollPosition = $hillBgTop - $missionContentHeight - navHeight;
-    const scrollOffset = $missionContentTop - navHeight;
-    $(window).scroll(function () {
-        let windowScrollTop = $window.scrollTop();
-        if (windowScrollTop > startScrollPosition && windowScrollTop < endScrollPosition) {
-            let missionMoveDistance = windowScrollTop - scrollOffset;
-            $missionContent.css('transform', `translate3d(0,${missionMoveDistance}px,0)`);
-        }
-    });*/
 });
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

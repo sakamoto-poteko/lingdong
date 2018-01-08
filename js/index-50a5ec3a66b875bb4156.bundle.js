@@ -57,10 +57,10 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://qiaoer2017.github.io/lingdong/";
+/******/ 	__webpack_require__.p = "http://forwardx.com";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 17);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10397,30 +10397,56 @@ module.exports = __webpack_require__.p + "img/weixin.e9e735d.svg";
 /* 9 */,
 /* 10 */,
 /* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(18);
+__webpack_require__(13);
 
 var nav = __webpack_require__(5);
 var footer = __webpack_require__(6);
 __webpack_require__(3);
 
 $(function () {
+
     $('#nav').html(nav);
     $('#footer').html(footer);
+
+    var $window = $(window);
+    var $moveImg = $('.move-img');
+    var $epic = $('.epic-content');
+
+    if ($window.width() > 768) {
+        move();
+    }
+    $window.scroll(function () {
+        if ($window.width() < 768) {
+            return;
+        }
+        move();
+    });
+
+    $window.resize(function () {
+        if ($window.width() < 768) {
+            window.location.reload();
+        }
+    });
+
+    function move() {
+        var scrollTop = $window.scrollTop();
+        var imgMoveDistance = scrollTop / 10;
+        var epicMoveDistance = scrollTop / 7;
+        setTimeout(function () {
+            $moveImg.css('transform', 'translate3d(0,' + imgMoveDistance + 'px,0)');
+            $epic.css('transform', 'translate3d(0,-' + epicMoveDistance + 'px,0)');
+        }, 100);
+    }
 });
 
 /***/ }),
-/* 18 */
+/* 13 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
