@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "http://forwardx.com/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 15);
+/******/ 	return __webpack_require__(__webpack_require__.s = 31);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10379,7 +10379,7 @@ module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n     
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<footer>\n    <div class=\"footer-content\">\n        <div class=\"footer-column\">\n            <label for=\"know\">\n                <h5>了解</h5>\n            </label>\n            <input type=\"checkbox\" id=\"know\">\n            <ul>\n                <li><a href=\"/consume.html\">CX-1</a></li>\n                <li><a href=\"/professional.html\">仓储协作机器人</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <label for=\"about\">\n                <h5>关于灵动</h5>\n            </label>\n            <input type=\"checkbox\" id=\"about\">\n            <ul>\n                <li><a href=\"/about.html\">我们的故事</a></li>\n                <li><a href=\"/newsroom.html\">媒体信息</a></li>\n                <li><a href=\"/jobs.html\">工作机会</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <!--<label for=\"contact\">-->\n            <h5>联系灵动</h5>\n            <!--</label>-->\n            <!--<input type=\"checkbox\" id=\"contact\">-->\n            <ul>\n                <li class=\"share contact\">\n                    <a href=\"https://weibo.com/ForwardX\" target=\"_blank\"><img class=\"icon\"\n                                                                              src=\"" + __webpack_require__(7) + "\"/></a>\n                    <span class=\"weixin-container\">\n                        <img class=\"icon\" src=\"" + __webpack_require__(8) + "\"/>\n                        <span class=\"qrcode-container\">\n                            <img class=\"qrcode\" src=\"" + __webpack_require__(2) + "\">\n                        </span>\n                    </span>\n                </li>\n                <li class=\"contact\"></li>\n                <li class=\"language\">\n                    <a href=\"/\">中国</a>\n                    |\n                    <a href=\"/en\">English</a>\n                </li>\n                <li class=\"contact\">邮箱：yaxin@forwardx.com</li>\n                <li class=\"contact\">电话：010-52780030</li>\n                <li class=\"contact\">地址：北京市海淀区世纪科贸大厦C2601</li>\n                <li class=\"copyright contact\">Copyright © 2018 Renaissance Robotics LLC. All rights reserved.</li>\n            </ul>\n        </div>\n    </div>\n</footer>";
+module.exports = "<footer>\n    <div class=\"footer-content\">\n        <div class=\"footer-column\">\n            <label for=\"know\">\n                <h5>了解</h5>\n            </label>\n            <input type=\"checkbox\" id=\"know\">\n            <ul>\n                <li><a href=\"/consume.html\">CX-1</a></li>\n                <li><a href=\"/professional.html\">仓储协作机器人</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <label for=\"about\">\n                <h5>关于灵动</h5>\n            </label>\n            <input type=\"checkbox\" id=\"about\">\n            <ul>\n                <li><a href=\"/about.html\">我们的故事</a></li>\n                <li><a href=\"/newsroom.html\">媒体信息</a></li>\n                <li><a href=\"/jobs.html\">工作机会</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <!--<label for=\"contact\">-->\n            <h5>联系灵动</h5>\n            <!--</label>-->\n            <!--<input type=\"checkbox\" id=\"contact\">-->\n            <ul>\n                <li class=\"share contact\">\n                    <a href=\"https://weibo.com/ForwardX\" target=\"_blank\"><img class=\"icon\"\n                                                                              src=\"" + __webpack_require__(7) + "\"/></a>\n                    <span class=\"weixin-container\">\n                        <img class=\"icon\" src=\"" + __webpack_require__(8) + "\"/>\n                        <span class=\"qrcode-container\">\n                            <img class=\"qrcode\" src=\"" + __webpack_require__(2) + "\">\n                        </span>\n                    </span>\n                </li>\n                <li class=\"contact\"></li>\n                <li class=\"language\">\n                    <a href=\"/\">简体中文</a>\n                    |\n                    <a href=\"/en\">English</a>\n                </li>\n                <li class=\"contact\">邮箱：yaxin@forwardx.com</li>\n                <li class=\"contact\">电话：010-52780030</li>\n                <li class=\"contact\">地址：北京市海淀区世纪科贸大厦C2601</li>\n                <li class=\"copyright contact\">Copyright © 2018 Renaissance Robotics LLC. All rights reserved.</li>\n            </ul>\n        </div>\n    </div>\n</footer>";
 
 /***/ }),
 /* 7 */
@@ -10400,72 +10400,44 @@ module.exports = __webpack_require__.p + "img/weixin.e9e735d.svg";
 /* 12 */,
 /* 13 */,
 /* 14 */,
-/* 15 */
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(16);
+__webpack_require__(32);
 
 var nav = __webpack_require__(5);
 var footer = __webpack_require__(6);
 __webpack_require__(3);
-// const $missionContent = $('.mission-content').eq(0);
-// const $missionContentTop = $missionContent.offset().top;
-// const $missionContentHeight = $missionContent.height();
-// const $window = $(window);
-// const $hillBg = $('.hill-bg').eq(0);
-// const $hillBgTop = $hillBg.offset().top;
-// const navHeight = 90;
 
 $(function () {
     $('#nav').html(nav);
     $('#footer').html(footer);
-
-    // 全屏背景图片随鼠标晃动效果
-    var lFollowX = 0,
-        lFollowY = 0,
-        x = 0,
-        y = 0,
-        friction = 1 / 30;
-    (function moveBackground() {
-        x += (lFollowX - x) * friction;
-        y += (lFollowY - y) * friction;
-
-        var translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-
-        $('.bg').css({
-            '-webkit-transform': translate,
-            '-moz-transform': translate,
-            'transform': translate
-        });
-
-        window.requestAnimationFrame(moveBackground);
-    })();
-    $('.bg').on('mousemove click', function (e) {
-        var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-        var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-        lFollowX = 20 * lMouseX / 100;
-        lFollowY = 10 * lMouseY / 100;
+    $('.career-item .name').click(function () {
+        $(this).siblings('.requirement').slideToggle('slow');
     });
-
-    // 窗口滚动
-
-    /*const startScrollPosition = $missionContentTop - navHeight;
-    const endScrollPosition = $hillBgTop - $missionContentHeight - navHeight;
-    const scrollOffset = $missionContentTop - navHeight;
-    $(window).scroll(function () {
-        let windowScrollTop = $window.scrollTop();
-        if (windowScrollTop > startScrollPosition && windowScrollTop < endScrollPosition) {
-            let missionMoveDistance = windowScrollTop - scrollOffset;
-            $missionContent.css('transform', `translate3d(0,${missionMoveDistance}px,0)`);
-        }
-    });*/
 });
 
 /***/ }),
-/* 16 */
+/* 32 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
