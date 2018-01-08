@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "http://forwardx.com/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 21);
+/******/ 	return __webpack_require__(__webpack_require__.s = 33);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10370,10 +10370,30 @@ return jQuery;
 
 
 /***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <div class=\"logo\">\n            <a href=\"/\">\n                <img src=\"" + __webpack_require__(1) + "\">\n            </a>\n        </div>\n        <input type=\"checkbox\" id=\"mobile-menu\">\n        <label for=\"mobile-menu\">\n            <div class=\"bread\">\n                <div class=\"bread-line line1\"></div>\n                <div class=\"bread-line line2\"></div>\n                <div class=\"bread-line line3\"></div>\n            </div>\n        </label>\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n                <a href=\"/consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/jobs.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n        </ul>\n    </div>\n</header>";
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<footer>\n    <div class=\"footer-content\">\n        <div class=\"footer-column\">\n            <label for=\"know\">\n                <h5>了解</h5>\n            </label>\n            <input type=\"checkbox\" id=\"know\">\n            <ul>\n                <li><a href=\"/consume.html\">CX-1</a></li>\n                <li><a href=\"/professional.html\">仓储协作机器人</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <label for=\"about\">\n                <h5>关于灵动</h5>\n            </label>\n            <input type=\"checkbox\" id=\"about\">\n            <ul>\n                <li><a href=\"/about.html\">我们的故事</a></li>\n                <li><a href=\"/newsroom.html\">媒体信息</a></li>\n                <li><a href=\"/jobs.html\">工作机会</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <!--<label for=\"contact\">-->\n            <h5>联系灵动</h5>\n            <!--</label>-->\n            <!--<input type=\"checkbox\" id=\"contact\">-->\n            <ul>\n                <li class=\"share contact\">\n                    <a href=\"https://weibo.com/ForwardX\" target=\"_blank\"><img class=\"icon\"\n                                                                              src=\"" + __webpack_require__(7) + "\"/></a>\n                    <span class=\"weixin-container\">\n                        <img class=\"icon\" src=\"" + __webpack_require__(8) + "\"/>\n                        <span class=\"qrcode-container\">\n                            <img class=\"qrcode\" src=\"" + __webpack_require__(2) + "\">\n                        </span>\n                    </span>\n                </li>\n                <li class=\"contact\"></li>\n                <li class=\"language\">\n                    <a href=\"/\">中国</a>\n                    |\n                    <a href=\"/en\">English</a>\n                </li>\n                <li class=\"contact\">邮箱：yaxin@forwardx.com</li>\n                <li class=\"contact\">电话：010-52780030</li>\n                <li class=\"contact\">地址：北京市海淀区世纪科贸大厦C2601</li>\n                <li class=\"copyright contact\">Copyright © 2018 Renaissance Robotics LLC. All rights reserved.</li>\n            </ul>\n        </div>\n    </div>\n</footer>";
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjI0IiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjQgMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPndlaWJvPC90aXRsZT48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0tMTAzMC01NUg0MTB2MjUwaC0xNDQweiIvPjxwYXRoIGQ9Ik0xNy4wMjQgOS4xODVjLS4yODItLjA5LS40NzUtLjE1LS4zMjctLjUzOC4zMi0uODQzLjM1Mi0xLjU3LjAwNi0yLjA5LS42NS0uOTcyLTIuNDI2LS45Mi00LjQ2Mi0uMDI1IDAgMC0uNjMuMjk0LS40Ny0uMjQuMzItMS4wNTUuMjctMS45NC0uMjItMi40NS0xLjEtMS4xNi00LjA0LjA0My02LjU2IDIuNjg1QzMuMSA4LjUwNyAyIDEwLjYwNSAyIDEyLjQyIDIgMTUuODkgNi4yNCAxOCAxMC4zOSAxOGM1LjQ0IDAgOS4wNTgtMy4zMTYgOS4wNTgtNS45NSAwLTEuNTktMS4yNzctMi40OTItMi40MjQtMi44NjV6bS02LjYyMiA3LjU3Yy0zLjMxLjM0NC02LjE3LTEuMjI2LTYuMzg0LTMuNTA3LS4yMTUtMi4yOCAyLjI5NS00LjQwOCA1LjYwNi00Ljc1IDMuMzEtLjM0NSA2LjE3IDEuMjI2IDYuMzg0IDMuNTA2LjIxNCAyLjI4LTIuMjk1IDQuNDA4LTUuNjA2IDQuNzUyem0xMC4yMzQtMTMuOTJjLTEuMzE0LTEuNTMtMy4yNS0yLjExMi01LjA0LTEuNzEzLS40MTQuMDkzLS42NzguNTItLjU5Ljk1My4wOS40MzQuNDk2LjcxLjkxLjYyIDEuMjcyLS4yODUgMi42NS4xMyAzLjU4MyAxLjIxNi45MyAxLjA5IDEuMTggMi41Ny43OCAzLjg3LS4xMy40Mi4wOS44OC40OSAxLjAxLjQuMTQuODMtLjA5Ljk2LS41MXYtLjAxYy41Ni0xLjgyLjItMy45LTEuMTEtNS40M3ptLTIuMzEgNS4wMDJhLjY1NC42NTQgMCAwIDAgLjgzLS40NDYgMi44MDIgMi44MDIgMCAwIDAtLjUzNy0yLjY0IDIuNTA0IDIuNTA0IDAgMCAwLTIuNDYtLjgzLjY5Mi42OTIgMCAwIDAtLjUxLjgzYy4wNy4zNy40Mi42MS43OC41M2ExLjIzIDEuMjMgMCAwIDEgMS4yLjQxYy4zMS4zNy4zOS44Ni4yNiAxLjMtLjExLjM3LjA4Ljc2LjQyLjg3em0tNy42ODYgMi40NDdjLTEuNjktLjQ2LTMuNi40MjMtNC4zMzUgMS45ODYtLjc0OCAxLjU5NC0uMDI1IDMuMzYzIDEuNjgzIDMuOTQyIDEuNzcuNTk4IDMuODU0LS4zMiA0LjU4LTIuMDQuNzE0LTEuNjgyLS4xNzgtMy40MTMtMS45MjgtMy44ODh6bS0xLjI5IDQuMDdjLS4zNDUuNTc2LTEuMDguODI4LTEuNjM0LjU2My0uNTQ3LS4yNi0uNzA4LS45My0uMzY0LTEuNDkuMzQtLjU2IDEuMDUtLjgwOCAxLjYtLjU2Ni41NTcuMjUuNzM1LjkyLjM5NyAxLjV6bTEuMTMtMS41MjNjLS4xMjMuMjMtLjM5OC4zMy0uNjEzLjI0LS4yMS0uMDktLjI3OC0uMzQtLjE1OC0uNTYuMTItLjIyLjM4LS4zMi41OS0uMjMuMjEuMDguMjkuMzQuMTcuNTZ6IiBmaWxsPSIjMDAwIi8+PC9nPjwvc3ZnPg=="
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/weixin.e9e735d.svg";
+
+/***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10388,12 +10408,7 @@ return jQuery;
 //# sourceMappingURL=aos.js.map
 
 /***/ }),
-/* 11 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 11 */,
 /* 12 */,
 /* 13 */,
 /* 14 */,
@@ -10403,16 +10418,28 @@ return jQuery;
 /* 18 */,
 /* 19 */,
 /* 20 */,
-/* 21 */
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(11);
+__webpack_require__(34);
 
-var nav = __webpack_require__(22);
-var footer = __webpack_require__(23);
+var nav = __webpack_require__(5);
+var footer = __webpack_require__(6);
 __webpack_require__(3);
 __webpack_require__(9);
 
@@ -10420,21 +10447,6 @@ $(function () {
 
     $('#nav').html(nav);
     $('#footer').html(footer);
-
-    var $indicatorItem = $('.indicator-item');
-    var $carouselItem = $('.carousel-item');
-
-    $indicatorItem.click(function () {
-        var index = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-        var $currentItem = $carouselItem.eq(index);
-        $currentItem.siblings().animate({
-            opacity: 0
-        }, 1000);
-        $currentItem.animate({
-            opacity: 1
-        }, 1000);
-    });
 
     // aos滚动动画
     AOS.init({
@@ -10448,28 +10460,10 @@ $(function () {
 });
 
 /***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <div class=\"logo\">\n            <a href=\"../index.html\">\n                <img src=\"" + __webpack_require__(1) + "\">\n            </a>\n        </div>\n        <input type=\"checkbox\" id=\"mobile-menu\">\n        <label for=\"mobile-menu\">\n            <div class=\"bread\">\n                <div class=\"bread-line line1\"></div>\n                <div class=\"bread-line line2\"></div>\n                <div class=\"bread-line line3\"></div>\n            </div>\n        </label>\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n                <a href=\"#\" class=\"nav-link\">Consumer</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"../professional.html\" class=\"nav-link\">Professional</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"../newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"../about.html\" class=\"nav-link\">About ForwardX</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"../jobs.html\" class=\"nav-link\">Join ForwardX</a>\n            </li>\n        </ul>\n    </div>\n</header>";
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = "<footer>\n    <div class=\"footer-content\">\n        <div class=\"footer-column\">\n            <label for=\"know\">\n                <h5 style=\"letter-spacing:.1em;\">About</h5>\n            </label>\n            <input type=\"checkbox\" id=\"know\">\n            <ul>\n                <li><a href=\"#\">CX-1</a></li>\n                <li><a href=\"../professional.html\">Warehouse collaboration robot</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <label for=\"about\">\n                <h5 style=\"letter-spacing:.1em;\">About ForwardX</h5>\n            </label>\n            <input type=\"checkbox\" id=\"about\">\n            <ul>\n                <li><a href=\"../about.html\">Our Story</a></li>\n                <li><a href=\"../newsroom.html\">Newsroom</a></li>\n                <li><a href=\"../jobs.html\">Career Opportunities</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <!--<label for=\"contact\">-->\n            <h5 style=\"letter-spacing:.1em;\">Contact us</h5>\n            <!--</label>-->\n            <!--<input type=\"checkbox\" id=\"contact\">-->\n            <ul>\n                <li class=\"share contact\">\n                    <a href=\"https://www.facebook.com/ForwardX-251067905429625/\" target=\"_blank\"><img class=\"icon\"\n                                                                                                      src=\"" + __webpack_require__(24) + "\"\n                                                                                                      width=\"24\"\n                                                                                                      height=\"24\"/></a>\n                    <span class=\"weixin-container\">\n                        <a href=\"https://twitter.com/ForwardXRobo\" target=\"_blank\"><img class=\"icon\"\n                                                                                        src=\"" + __webpack_require__(25) + "\"\n                                                                                        width=\"24\"\n                                                                                        height=\"20\"/></a>\n                        <!--<span class=\"qrcode-container\">\n                            <img class=\"qrcode\" src=\"" + __webpack_require__(2) + "\">\n                        </span>-->\n                    </span>\n                </li>\n                <li class=\"contact\"></li>\n                <li class=\"language\">\n                    <a href=\"../index.html\">中国</a>\n                    |\n                    <a href=\"./index.html\">English</a>\n                </li>\n                <li class=\"contact\">Email：xuyuan@forwardx.com</li>\n                <li class=\"contact\">Phone：010-52780030</li>\n                <li class=\"contact address\">Address：Century Electronics Building, Haidian District, Beijing,C2601</li>\n                <li class=\"copyright contact\">Copyright © 2018 Forward Inc. All rights reserved.</li>\n            </ul>\n        </div>\n    </div>\n</footer>";
-
-/***/ }),
-/* 24 */
+/* 34 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAE0ElEQVR4nO3dS6imcwDH8d8ZY2jcRiO3pIaSpJD7AlmwkMUoKcLexkIpCxtmYWOlWFi6rCRk61JYSFkpG4lBWZFrI4TFazIWfmPOec75v+9zPp96Oru3X+e83573vLdnLayys5JcnuTCJOcmOS3JCUnWkvw5cNdhe5J8muSpJF8P3rIua6MHcEwuS3JLkn1JrklyRZLjhi46uoNJbkvy8egh67Fz9ACO6qIkdyXZn+TKwVvWYxnOZOsmkOV1Q5KHsgiDQQSyfK5N8kSSm0cPQSDLZE+Sp5PcM3oI/xDIcrgzyfNJThw9hH/bMXoAeSbJSxHHUnIGGefkJG8nuWr0EP6bQMY4L8kHSc4ZPYROIFtvX5IPk5w+eghH53+QrXVOkvcjjpUhkK2zO8l7Sc4cPYT/TyBb55UkF4wewbERyNY4kOTW0SM4dgLZfDcleXT0CNZHIJtrLcmzo0ewfgLZXI9k8XZ1VpRANs95SR4fPYKNEcjmeTheiF15Atkc5yd5cPQINk4gm+P+0QOYhkCmtyvJA6NHMA2BTO/GLL6ChxkQyPTuHT2A6QhkWruT3D56BNMRyLQuTLJ39AimI5BpXTd6ANMSyLR8l9XMCGRaV48ewLQEMp298fTu7AhkOqdl8SwWMyKQ6Zw6egDTE8h0nD1mSCDTOWn0gCW10hdp8nmF6ewaPWAdfknySZKfsrgjT31nPiPJR0kOTXy7W0Yg28/PSV5N8nKSN5L8OHbOchPI9vJcFh/k+n70kFUhkO1jf5LXRo9YNQLZHm5M8u7oEavIs1jzd1/EsW4CmbcXk7wwesQqE8i8PTZ6wKoTyHy9nsVrHGyAQObrndED5kAg8/Xm6AFzIJB5+iHJZ6NHzIFA5unHLN5fxQYJZJ52ZMXfRbssBDJfApmAQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIg0/l19IAj/P73wQat+uUPLk5yZhaXEhvpYJJLB2840u4k1yf5NskpA3esJTk+yedJvhq4Y9t6K8mfjqU/DvzXH3DZeYgFhUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgWBs9YIMuSXJ2kkODdxxMcneSJwfvOOybJHck+S7JyQN3rCXZleTTJF8O3MESuCXjrwV4+PgiHh1Mwi9xOrtGDzjCzqz+FYyXgkCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEAgUAoFCIFAIBAqBQCEQKAQChUCgEMh01kYPOMKOLNeelbVz9IAZ+e3vn4eS/D5wxylJfkjyx8ANs/EX1gnUkU5oZwYAAAAASUVORK5CYII="
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,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"
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
