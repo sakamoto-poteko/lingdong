@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "http://forwardx.com/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 17);
+/******/ 	return __webpack_require__(__webpack_require__.s = 18);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10445,13 +10445,14 @@ module.exports = __webpack_require__.p + "img/weixin.e9e735d.svg";
 /* 14 */,
 /* 15 */,
 /* 16 */,
-/* 17 */
+/* 17 */,
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(18);
+__webpack_require__(19);
 
 __webpack_require__(1);
 
@@ -10512,7 +10513,7 @@ $(function () {
 });
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
