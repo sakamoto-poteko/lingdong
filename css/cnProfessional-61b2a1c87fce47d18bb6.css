@@ -104,7 +104,7 @@ a {
 .nav {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   height: 90px;
   background: rgba(255, 255, 255, 0.75);
@@ -488,6 +488,8 @@ footer {
           -webkit-box-sizing: border-box;
                   box-sizing: border-box;
           font-size: 18px;
+          padding: 0 30px;
+          text-align: justify;
           margin: 0;
           font-weight: 400; } }
   .main .slide-item3 {
@@ -544,7 +546,8 @@ footer {
               font-size: 16px;
               -webkit-box-sizing: border-box;
                       box-sizing: border-box;
-              padding: 0 10px;
+              padding: 0 30px;
+              text-align: justify;
               font-weight: 400; } }
     .main .slide-item3 figure {
       display: inline-block;
@@ -616,7 +619,9 @@ footer {
               font-weight: 400;
               width: 100%;
               -webkit-box-sizing: border-box;
-                      box-sizing: border-box; } }
+                      box-sizing: border-box;
+              padding: 0 30px;
+              text-align: justify; } }
   .main .slide-item5 {
     position: relative;
     width: 100%;
@@ -658,8 +663,11 @@ footer {
           @media screen and (max-width: 768px) {
             .main .slide-item5 .epic .content p {
               font-size: 16px;
-              padding: 10px;
-              font-weight: 400; } }
+              font-weight: 400;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box;
+              padding: 10px 30px;
+              text-align: justify; } }
   .main .slide-item6 {
     position: relative;
     width: 100%;
@@ -688,7 +696,6 @@ footer {
       .main .slide-item6 .epic .content {
         position: absolute;
         bottom: 100px;
-        right: 20px;
         color: #fff; }
         @media screen and (max-width: 768px) {
           .main .slide-item6 .epic .content {
@@ -706,14 +713,16 @@ footer {
           font-size: 20px;
           line-height: 1.4;
           margin-bottom: .5em;
-          width: 100%;
-          font-weight: 300; }
+          font-weight: 300;
+          width: 450px; }
           @media screen and (max-width: 768px) {
             .main .slide-item6 .epic .content p {
-              font-size: 16px;
-              padding: 0 10px;
+              width: 100%;
               -webkit-box-sizing: border-box;
                       box-sizing: border-box;
+              font-size: 16px;
+              padding: 0 30px;
+              text-align: justify;
               font-weight: 400; } }
     .main .slide-item6 figure {
       display: inline-block;
@@ -779,5 +788,6 @@ footer {
               font-size: 16px;
               -webkit-box-sizing: border-box;
                       box-sizing: border-box;
-              padding: 0 10px;
+              padding: 0 30px;
+              text-align: justify;
               font-weight: 400; } }
