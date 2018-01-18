@@ -182,7 +182,8 @@ a {
               width: 100%;
               border-bottom: 1px solid #eee; } }
         .nav .nav-content .nav-list .nav-item.language {
-          font-size: 14px; }
+          font-size: 14px;
+          vertical-align: baseline; }
           .nav .nav-content .nav-list .nav-item.language .nav-link {
             font-size: 14px;
             color: #666;
