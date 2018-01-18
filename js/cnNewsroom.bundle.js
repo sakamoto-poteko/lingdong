@@ -123,31 +123,31 @@ module.exports = __webpack_require__.p + "img/logo.d6c042c.png";
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/wechat-qrcode.3120d8a.jpg";
+module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <div class=\"logo\">\n            <a href=\"/cn\">\n                <img src=\"" + __webpack_require__(2) + "\">\n            </a>\n        </div>\n        <input type=\"checkbox\" id=\"mobile-menu\">\n        <label for=\"mobile-menu\">\n            <div class=\"bread\">\n                <div class=\"bread-line line1\"></div>\n                <div class=\"bread-line line2\"></div>\n                <div class=\"bread-line line3\"></div>\n            </div>\n        </label>\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n                <a href=\"/cn/consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/cn/professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/cn/newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/cn/about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/cn/jobs.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n            <li class=\"nav-item language\">\n                <a href=\"/cn\" class=\"nav-link\">中文</a> / <a href=\"/\" class=\"nav-link en\">en</a>\n            </li>\n        </ul>\n    </div>\n</header>";
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<header class=\"nav\">\n    <div class=\"nav-content\">\n        <div class=\"logo\">\n            <a href=\"/cn\">\n                <img src=\"" + __webpack_require__(2) + "\">\n            </a>\n        </div>\n        <input type=\"checkbox\" id=\"mobile-menu\">\n        <label for=\"mobile-menu\">\n            <div class=\"bread\">\n                <div class=\"bread-line line1\"></div>\n                <div class=\"bread-line line2\"></div>\n                <div class=\"bread-line line3\"></div>\n            </div>\n        </label>\n        <ul class=\"nav-list\">\n            <li class=\"nav-item\">\n                <a href=\"/cn/consume.html\" class=\"nav-link\">消费级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/cn/professional.html\" class=\"nav-link\">专业级</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/cn/newsroom.html\" class=\"nav-link\">Newsroom</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/cn/about.html\" class=\"nav-link\">关于灵动</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"/cn/jobs.html\" class=\"nav-link\">加入灵动</a>\n            </li>\n            <li class=\"nav-item language\">\n                <a href=\"/cn\" class=\"nav-link\">中文</a> / <a href=\"/\" class=\"nav-link en\">en</a>\n            </li>\n        </ul>\n    </div>\n</header>";
+module.exports = "<footer>\n    <div class=\"footer-content\">\n        <div class=\"footer-column about\">\n            <label for=\"know\">\n                <h5>了解</h5>\n            </label>\n            <input type=\"checkbox\" id=\"know\">\n            <ul>\n                <li><a href=\"/cn/consume.html\">ForwardX CX-1</a></li>\n                <li><a href=\"/cn/professional.html\">仓储协作机器人</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column about-us\">\n            <label for=\"about\">\n                <h5>关于灵动</h5>\n            </label>\n            <input type=\"checkbox\" id=\"about\">\n            <ul>\n                <li><a href=\"/cn/about.html\">我们的故事</a></li>\n                <li><a href=\"/cn/newsroom.html\">媒体信息</a></li>\n                <li><a href=\"/cn/jobs.html\">工作机会</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column contact\">\n            <label for=\"contact\">\n                <h5>联系灵动</h5>\n            </label>\n            <input type=\"checkbox\" id=\"contact\">\n            <ul>\n                <li class=\"contact\">邮箱：yaxin@forwardx.com</li>\n                <li class=\"contact\">电话：010-52780030</li>\n                <li class=\"contact\">地址：北京市海淀区世纪科贸大厦C座2601</li>\n            </ul>\n        </div>\n        <div class=\"footer-column other\">\n            <h5>其他</h5>\n            <ul>\n                <li class=\"share contact\">\n                    <a href=\"https://weibo.com/ForwardX\" target=\"_blank\">\n                        <img class=\"icon\" src=\"" + __webpack_require__(5) + "\"/>\n                    </a>\n                    <span class=\"weixin-container\">\n                        <img class=\"icon\" src=\"" + __webpack_require__(6) + "\"/>\n                        <span class=\"qrcode-container\">\n                            <img class=\"qrcode\" src=\"" + __webpack_require__(7) + "\">\n                        </span>\n                    </span>\n                </li>\n                <li class=\"contact\"></li>\n                <li class=\"language\">\n                    <a href=\"/cn\">\n                        <span class=\"country-icon china\"></span>简体中文\n                    </a> |\n                    <a href=\"/\">\n                        <span class=\"country-icon usa\"></span>English\n                    </a>\n                </li>\n                <li class=\"copyright contact\">Copyright © 2018 Renaissance Robotics LLC. All rights reserved.</li>\n            </ul>\n        </div>\n    </div>\n</footer>";
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = "<footer>\n    <div class=\"footer-content\">\n        <div class=\"footer-column\">\n            <label for=\"know\">\n                <h5>了解</h5>\n            </label>\n            <input type=\"checkbox\" id=\"know\">\n            <ul>\n                <li><a href=\"/cn/consume.html\">ForwardX CX-1</a></li>\n                <li><a href=\"/cn/professional.html\">仓储协作机器人</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <label for=\"about\">\n                <h5>关于灵动</h5>\n            </label>\n            <input type=\"checkbox\" id=\"about\">\n            <ul>\n                <li><a href=\"/cn/about.html\">我们的故事</a></li>\n                <li><a href=\"/cn/newsroom.html\">媒体信息</a></li>\n                <li><a href=\"/cn/jobs.html\">工作机会</a></li>\n            </ul>\n        </div>\n        <div class=\"footer-column\">\n            <!--<label for=\"contact\">-->\n            <h5>联系灵动</h5>\n            <!--</label>-->\n            <!--<input type=\"checkbox\" id=\"contact\">-->\n            <ul>\n                <li class=\"share contact\">\n                    <a href=\"https://weibo.com/ForwardX\" target=\"_blank\"><img class=\"icon\"\n                                                                              src=\"" + __webpack_require__(6) + "\"/></a>\n                    <span class=\"weixin-container\">\n                        <img class=\"icon\" src=\"" + __webpack_require__(7) + "\"/>\n                        <span class=\"qrcode-container\">\n                            <img class=\"qrcode\" src=\"" + __webpack_require__(3) + "\">\n                        </span>\n                    </span>\n                </li>\n                <li class=\"contact\"></li>\n                <li class=\"language\">\n                    <a href=\"/cn\"><span class=\"country-icon china\"></span>简体中文</a>\n                    |\n                    <a href=\"/\"><span class=\"country-icon usa\"></span>English</a>\n                </li>\n                <li class=\"contact\">邮箱：yaxin@forwardx.com</li>\n                <li class=\"contact\">电话：010-52780030</li>\n                <li class=\"contact\">地址：北京市海淀区世纪科贸大厦C座2601</li>\n                <li class=\"copyright contact\">Copyright © 2018 Renaissance Robotics LLC. All rights reserved.</li>\n            </ul>\n        </div>\n    </div>\n</footer>";
-
-/***/ }),
-/* 6 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjI0IiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjQgMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPndlaWJvPC90aXRsZT48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0tMTAzMC01NUg0MTB2MjUwaC0xNDQweiIvPjxwYXRoIGQ9Ik0xNy4wMjQgOS4xODVjLS4yODItLjA5LS40NzUtLjE1LS4zMjctLjUzOC4zMi0uODQzLjM1Mi0xLjU3LjAwNi0yLjA5LS42NS0uOTcyLTIuNDI2LS45Mi00LjQ2Mi0uMDI1IDAgMC0uNjMuMjk0LS40Ny0uMjQuMzItMS4wNTUuMjctMS45NC0uMjItMi40NS0xLjEtMS4xNi00LjA0LjA0My02LjU2IDIuNjg1QzMuMSA4LjUwNyAyIDEwLjYwNSAyIDEyLjQyIDIgMTUuODkgNi4yNCAxOCAxMC4zOSAxOGM1LjQ0IDAgOS4wNTgtMy4zMTYgOS4wNTgtNS45NSAwLTEuNTktMS4yNzctMi40OTItMi40MjQtMi44NjV6bS02LjYyMiA3LjU3Yy0zLjMxLjM0NC02LjE3LTEuMjI2LTYuMzg0LTMuNTA3LS4yMTUtMi4yOCAyLjI5NS00LjQwOCA1LjYwNi00Ljc1IDMuMzEtLjM0NSA2LjE3IDEuMjI2IDYuMzg0IDMuNTA2LjIxNCAyLjI4LTIuMjk1IDQuNDA4LTUuNjA2IDQuNzUyem0xMC4yMzQtMTMuOTJjLTEuMzE0LTEuNTMtMy4yNS0yLjExMi01LjA0LTEuNzEzLS40MTQuMDkzLS42NzguNTItLjU5Ljk1My4wOS40MzQuNDk2LjcxLjkxLjYyIDEuMjcyLS4yODUgMi42NS4xMyAzLjU4MyAxLjIxNi45MyAxLjA5IDEuMTggMi41Ny43OCAzLjg3LS4xMy40Mi4wOS44OC40OSAxLjAxLjQuMTQuODMtLjA5Ljk2LS41MXYtLjAxYy41Ni0xLjgyLjItMy45LTEuMTEtNS40M3ptLTIuMzEgNS4wMDJhLjY1NC42NTQgMCAwIDAgLjgzLS40NDYgMi44MDIgMi44MDIgMCAwIDAtLjUzNy0yLjY0IDIuNTA0IDIuNTA0IDAgMCAwLTIuNDYtLjgzLjY5Mi42OTIgMCAwIDAtLjUxLjgzYy4wNy4zNy40Mi42MS43OC41M2ExLjIzIDEuMjMgMCAwIDEgMS4yLjQxYy4zMS4zNy4zOS44Ni4yNiAxLjMtLjExLjM3LjA4Ljc2LjQyLjg3em0tNy42ODYgMi40NDdjLTEuNjktLjQ2LTMuNi40MjMtNC4zMzUgMS45ODYtLjc0OCAxLjU5NC0uMDI1IDMuMzYzIDEuNjgzIDMuOTQyIDEuNzcuNTk4IDMuODU0LS4zMiA0LjU4LTIuMDQuNzE0LTEuNjgyLS4xNzgtMy40MTMtMS45MjgtMy44ODh6bS0xLjI5IDQuMDdjLS4zNDUuNTc2LTEuMDguODI4LTEuNjM0LjU2My0uNTQ3LS4yNi0uNzA4LS45My0uMzY0LTEuNDkuMzQtLjU2IDEuMDUtLjgwOCAxLjYtLjU2Ni41NTcuMjUuNzM1LjkyLjM5NyAxLjV6bTEuMTMtMS41MjNjLS4xMjMuMjMtLjM5OC4zMy0uNjEzLjI0LS4yMS0uMDktLjI3OC0uMzQtLjE1OC0uNTYuMTItLjIyLjM4LS4zMi41OS0uMjMuMjEuMDguMjkuMzQuMTcuNTZ6IiBmaWxsPSIjMDAwIi8+PC9nPjwvc3ZnPg=="
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/weixin.e9e735d.svg";
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/wechat-qrcode.3120d8a.jpg";
 
 /***/ }),
 /* 8 */
@@ -180,13 +180,17 @@ module.exports = g;
 /* 9 */,
 /* 10 */,
 /* 11 */,
-/* 12 */
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 13 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {
@@ -46907,7 +46911,7 @@ return ChimeePlayer;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {
@@ -61428,23 +61432,23 @@ return ChimeeMobilePlayer;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
-/* 15 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = {"code":0,"data":[{"id":"1","date":"2017-12-11","title":"快递员兄弟，你的“机器人同事”可能比想象中要来得更快","cover":"courier.jpg"},{"id":"2","date":"2017-12-11","title":"灵动科技仓储协作机器人神秘闪现京东物流大会","cover":"logistics.jpg"},{"id":"3","date":"2017-12-11","title":"AI机器人公司灵动科技完成A轮千万美金融资","cover":"forwardx.jpg"},{"id":"4","date":"2017-12-30","title":"2018，我们在Vegas等你","cover":"ces.jpg"},{"id":"5","link":"http://www.bbc.com/news/av/technology-42617563/ces-2018-a-seeing-suitcase-and-other-ai-enhanced-gadgets","date":"2018-01-09","title":"来自英国广播公司BBC的报道：CES2018，ForwardX—— 一只看得见的AI智能行李箱","cover":"bbc.jpg"},{"id":"6","link":"https://learningenglish.voanews.com/a/ces-2018-20-hot-technology-products-and-gadgets/4201930.html","date":"2018-01-10","title":"VOA报道：ForwardX：2018CES，20款最火的科技产品之一","cover":"voa.jpg"},{"id":"7","link":"http://www.dailymail.co.uk/sciencetech/article-5246827/Suitcase-uses-facial-recognition-technology-follow-you.html?from=singlemessage&isappinstalled=0","date":"2018-01-08","title":"Daily Mail英国每日邮报报道：ForwardX：采用面部识别和感应系统的自动驾驶行李箱，使手拉行李成为过去","cover":"dailymail.jpg"}]}
 
 /***/ }),
-/* 16 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./bbc.jpg": 17,
-	"./ces.jpg": 18,
-	"./courier.jpg": 19,
-	"./dailymail.jpg": 20,
-	"./forwardx.jpg": 21,
-	"./logistics.jpg": 22,
-	"./voa.jpg": 23
+	"./bbc.jpg": 21,
+	"./ces.jpg": 22,
+	"./courier.jpg": 23,
+	"./dailymail.jpg": 24,
+	"./forwardx.jpg": 25,
+	"./logistics.jpg": 26,
+	"./voa.jpg": 27
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -61460,55 +61464,51 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 16;
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/bbc.1db523c.jpg";
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/ces.39b8e7b.jpg";
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/courier.adda840.jpg";
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/dailymail.2aa7e57.jpg";
+webpackContext.id = 20;
 
 /***/ }),
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/forwardx.c71bfbb.jpg";
+module.exports = __webpack_require__.p + "img/bbc.1db523c.jpg";
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/logistics.a368162.jpg";
+module.exports = __webpack_require__.p + "img/ces.39b8e7b.jpg";
 
 /***/ }),
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "img/courier.adda840.jpg";
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/dailymail.2aa7e57.jpg";
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/forwardx.c71bfbb.jpg";
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/logistics.a368162.jpg";
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
 module.exports = __webpack_require__.p + "img/voa.f150063.jpg";
 
 /***/ }),
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
 /* 28 */,
 /* 29 */,
 /* 30 */,
@@ -61520,15 +61520,15 @@ module.exports = __webpack_require__.p + "img/voa.f150063.jpg";
 "use strict";
 
 
-__webpack_require__(12);
+__webpack_require__(16);
 
 __webpack_require__(0);
 
-var _chimeePlayer = __webpack_require__(13);
+var _chimeePlayer = __webpack_require__(17);
 
 var _chimeePlayer2 = _interopRequireDefault(_chimeePlayer);
 
-var _chimeeMobilePlayer = __webpack_require__(14);
+var _chimeeMobilePlayer = __webpack_require__(18);
 
 var _chimeeMobilePlayer2 = _interopRequireDefault(_chimeeMobilePlayer);
 
@@ -61538,11 +61538,11 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var nav = __webpack_require__(4);
-var footer = __webpack_require__(5);
+var nav = __webpack_require__(3);
+var footer = __webpack_require__(4);
 
 
-var data = __webpack_require__(15);
+var data = __webpack_require__(19);
 
 var ERR_OK = 0;
 (0, _jquery2.default)(function () {
@@ -61619,7 +61619,7 @@ function generateNewsItem(data) {
             } else {
                 href = './newsdetail.html?newsid=' + news.id;
             }
-            var imgSrc = __webpack_require__(16)("./" + news.cover);
+            var imgSrc = __webpack_require__(20)("./" + news.cover);
             var newsItem = '\n                <li class="news-item">\n                    <a href=' + href + '>\n                    <div class="content">\n                        <time>' + news.date + '</time>\n                        <h1 class="title">' + news.title + '</h1>\n                    </div>\n                    <div class="img-asset">\n                        <img src="' + imgSrc + '">\n                    </div>\n                    </a>\n                </li>\n                ';
             $newsGroup.append(newsItem);
         });
