@@ -51,7 +51,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: 'Aspira Nar', 'PingFang SC', 'Fang Song', Dengxian, 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+  font-family: "\9ED1\4F53", 'Aspira Nar', 'PingFang SC', 'Fang Song', Dengxian, 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
   -webkit-font-smoothing: antialiased;
   /*chrome、safari*/
   -moz-osx-font-smoothing: grayscale;
@@ -195,8 +195,6 @@ a {
                 font-size: 16px !important; } }
             .nav .nav-content .nav-list .nav-item.language .nav-link:hover {
               color: #256DA7; }
-            .nav .nav-content .nav-list .nav-item.language .nav-link.en {
-              font-size: 16px; }
     .nav .nav-content #mobile-menu {
       visibility: hidden;
       width: 0;
@@ -376,6 +374,35 @@ footer {
         @media screen and (max-width: 768px) {
           footer .footer-content .footer-column.other ul {
             height: 128px; } }
+  footer #back-top {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    right: 60px;
+    bottom: 182px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease; }
+    @media screen and (max-width: 768px) {
+      footer #back-top {
+        right: 10px;
+        width: 60px;
+        height: 60px; } }
+    footer #back-top:hover {
+      background: rgba(0, 0, 0, 0.3); }
+    footer #back-top img {
+      margin-top: 25px;
+      width: 40px;
+      height: auto; }
+      @media screen and (max-width: 768px) {
+        footer #back-top img {
+          width: 30px;
+          margin-top: 20px; } }
 
 .nav {
   position: fixed;
@@ -549,6 +576,53 @@ footer {
             .main .slide.hero figure img {
               width: 100%;
               height: auto; } }
+    .main .slide.questionnaire {
+      height: 300px;
+      min-height: auto;
+      background: #256DA7;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 30px 0; }
+      @media screen and (max-width: 768px) {
+        .main .slide.questionnaire {
+          height: 200px; } }
+      .main .slide.questionnaire .content {
+        height: 100%;
+        width: 900px;
+        margin: 0 auto;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 0 50px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff; }
+        @media screen and (max-width: 768px) {
+          .main .slide.questionnaire .content {
+            width: 100%;
+            padding: 0 20px; } }
+        .main .slide.questionnaire .content a {
+          color: #fff;
+          -webkit-transition: color .3s ease;
+          transition: color .3s ease; }
+          .main .slide.questionnaire .content a:hover {
+            color: #bbb; }
+          .main .slide.questionnaire .content a h1 {
+            font-size: 50px;
+            margin-top: 70px;
+            font-weight: 300; }
+            @media screen and (max-width: 768px) {
+              .main .slide.questionnaire .content a h1 {
+                font-size: 25px;
+                margin-top: 30px;
+                font-weight: 400; } }
+          .main .slide.questionnaire .content a p {
+            font-size: 24px;
+            font-weight: 300;
+            margin-top: 20px; }
+            @media screen and (max-width: 768px) {
+              .main .slide.questionnaire .content a p {
+                font-size: 20px;
+                margin-top: 10px;
+                font-weight: 300; } }
     .main .slide.slide-item1 {
       position: relative;
       width: 100%;
@@ -589,8 +663,7 @@ footer {
         .main .slide.slide-item1 {
           height: auto;
           min-height: auto;
-          padding-bottom: 50px;
-          margin-top: 100px; } }
+          padding-bottom: 50px; } }
       .main .slide.slide-item1 video, .main .slide.slide-item1 .mask {
         position: absolute;
         right: 0;
@@ -598,9 +671,7 @@ footer {
         min-width: 100%;
         min-height: 100%;
         height: auto;
-        width: auto;
-        -webkit-filter: grayscale(100%);
-                filter: grayscale(100%); }
+        width: auto; }
         @media screen and (max-width: 768px) {
           .main .slide.slide-item1 video, .main .slide.slide-item1 .mask {
             display: none; } }

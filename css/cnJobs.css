@@ -51,7 +51,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: 'Aspira Nar', 'PingFang SC', 'Fang Song', Dengxian, 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+  font-family: "\9ED1\4F53", 'Aspira Nar', 'PingFang SC', 'Fang Song', Dengxian, 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
   -webkit-font-smoothing: antialiased;
   /*chrome、safari*/
   -moz-osx-font-smoothing: grayscale;
@@ -195,8 +195,6 @@ a {
                 font-size: 16px !important; } }
             .nav .nav-content .nav-list .nav-item.language .nav-link:hover {
               color: #256DA7; }
-            .nav .nav-content .nav-list .nav-item.language .nav-link.en {
-              font-size: 16px; }
     .nav .nav-content #mobile-menu {
       visibility: hidden;
       width: 0;
@@ -376,6 +374,35 @@ footer {
         @media screen and (max-width: 768px) {
           footer .footer-content .footer-column.other ul {
             height: 128px; } }
+  footer #back-top {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    right: 60px;
+    bottom: 182px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease; }
+    @media screen and (max-width: 768px) {
+      footer #back-top {
+        right: 10px;
+        width: 60px;
+        height: 60px; } }
+    footer #back-top:hover {
+      background: rgba(0, 0, 0, 0.3); }
+    footer #back-top img {
+      margin-top: 25px;
+      width: 40px;
+      height: auto; }
+      @media screen and (max-width: 768px) {
+        footer #back-top img {
+          width: 30px;
+          margin-top: 20px; } }
 
 .main {
   position: relative;
