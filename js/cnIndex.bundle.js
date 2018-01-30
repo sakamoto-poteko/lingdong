@@ -217,11 +217,11 @@ var footer = __webpack_require__(5);
         move();
     });
 
-    $window.resize(function () {
+    /*$window.resize(function () {
         if ($window.width() < 768) {
             window.location.reload();
         }
-    });
+    });*/
 
     function move() {
         var scrollTop = $window.scrollTop();

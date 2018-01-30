@@ -51,7 +51,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: "\9ED1\4F53", 'Aspira Nar', 'PingFang SC', 'Fang Song', Dengxian, 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+  font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, Heiti, sans-serif;
   -webkit-font-smoothing: antialiased;
   /*chrome、safari*/
   -moz-osx-font-smoothing: grayscale;
