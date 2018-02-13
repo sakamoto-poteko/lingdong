@@ -543,7 +543,7 @@ footer {
         height: auto;
         width: auto; }
     .main .slide-item1 .mask {
-      background: rgba(0, 0, 0, 0.5); }
+      background: rgba(0, 0, 0, 0.05); }
     .main .slide-item1 .content {
       position: absolute;
       top: 50%;
@@ -612,13 +612,13 @@ footer {
           background: transparent center no-repeat;
           background-size: cover; }
           .main .slide-item1 .features li .icon.feature1 {
-            background-image: url(http://forwardx.com/img/feature1.ea5f186.png); }
+            background-image: url(http://forwardx.com/img/feature1.7cec218.png); }
           .main .slide-item1 .features li .icon.feature2 {
-            background-image: url(http://forwardx.com/img/feature2.d6364c2.png); }
+            background-image: url(http://forwardx.com/img/feature2.24d4085.png); }
           .main .slide-item1 .features li .icon.feature3 {
-            background-image: url(http://forwardx.com/img/feature3.6456ee4.png); }
+            background-image: url(http://forwardx.com/img/feature3.afa0e43.png); }
           .main .slide-item1 .features li .icon.feature4 {
-            background-image: url(http://forwardx.com/img/feature4.b9c3737.png); }
+            background-image: url(http://forwardx.com/img/feature4.e8529f7.png); }
         @media screen and (max-width: 768px) {
           .main .slide-item1 .features li {
             width: 50%; } }
