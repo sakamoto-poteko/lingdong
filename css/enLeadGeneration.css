@@ -756,3 +756,12 @@ footer {
       color: #666;
       line-height: 300px;
       text-align: center; }
+      @media screen and (max-width: 768px) {
+        .main .modal .popup {
+          width: 90%;
+          height: 200px;
+          line-height: 200px;
+          font-size: 18px;
+          margin: 0;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); } }
