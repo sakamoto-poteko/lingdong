@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "http://forwardx.com/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 66);
+/******/ 	return __webpack_require__(__webpack_require__.s = 68);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -173,13 +173,13 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAB2CAYAAACN
 
 /***/ }),
 
-/***/ 66:
+/***/ 68:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(67);
+__webpack_require__(69);
 
 __webpack_require__(0);
 
@@ -194,16 +194,55 @@ var footer = __webpack_require__(11);
 
 
 (0, _jquery2.default)(function () {
-
+    var $submitButton = (0, _jquery2.default)('.submit-button');
+    var $email = (0, _jquery2.default)('.email');
+    var $tip = (0, _jquery2.default)('.small .tip');
     var $footer = (0, _jquery2.default)('#footer');
+    var $modal = (0, _jquery2.default)('.modal');
 
     (0, _jquery2.default)('#nav').html(nav);
     $footer.html(footer);
+
+    $submitButton.click(function () {
+        var email = $email.val();
+        if (validate(email)) {
+            // 验证通过发送
+            _jquery2.default.post('https://d.forwardx.com/api/mail/subscribe', {
+                email: email
+            }, function (data, status) {
+                console.log('data', data);
+                console.log('status', status);
+                if (status === 'success') {
+                    $tip.text('Subscription Successful!');
+                }
+            });
+            $email.val('');
+            $modal.show();
+            setTimeout(function () {
+                $modal.hide();
+            }, 3000);
+        } else {
+            $tip.text('Please enter a valid email address.');
+            $email.on('input', function () {
+                email = $email.val();
+                if (validate(email)) {
+                    $tip.text('');
+                } else {
+                    $tip.text('Please enter a valid email address.');
+                }
+            });
+        }
+    });
+
+    function validate(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email.toLowerCase());
+    }
 });
 
 /***/ }),
 
-/***/ 67:
+/***/ 69:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
