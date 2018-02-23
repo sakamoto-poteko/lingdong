@@ -508,14 +508,15 @@ footer {
   width: 100%;
   height: 100%;
   min-width: 1200px;
-  min-height: 850px; }
+  min-height: 800px; }
   @media screen and (max-width: 768px) {
     .main {
       min-width: auto; } }
   .main .slide-item1 {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 70%;
+    min-height: 584px;
     overflow: hidden;
     background: #333; }
     @media screen and (max-width: 768px) {
@@ -548,10 +549,12 @@ footer {
       position: absolute;
       top: 50%;
       left: 50%;
-      height: 250px;
+      height: 218px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       text-align: center;
       width: 900px;
-      margin: -250px 0 0 -450px;
+      margin: -130px 0 0 -450px;
       color: #fff; }
       @media screen and (max-width: 768px) {
         .main .slide-item1 .content {
@@ -560,12 +563,9 @@ footer {
           margin: 50px 0 0 0;
           height: auto; } }
       .main .slide-item1 .content h1 {
-        font-size: 100px;
-        margin-bottom: .2em;
-        line-height: 1.4;
-        font-weight: 900;
-        -webkit-text-stroke: 1.5px #266ca7;
-        text-stroke: 1.5px #266ca7; }
+        font-size: 80px;
+        margin-bottom: .1em;
+        font-weight: 900; }
         @media screen and (max-width: 768px) {
           .main .slide-item1 .content h1 {
             font-size: 60px;
@@ -576,7 +576,7 @@ footer {
             text-stroke: unset; } }
       .main .slide-item1 .content .desc {
         line-height: 1.6;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 300; }
         .main .slide-item1 .content .desc strong {
           font-weight: 400; }
@@ -590,11 +590,11 @@ footer {
             text-align: justify; } }
     .main .slide-item1 .features {
       position: absolute;
-      top: 50%;
+      bottom: 50px;
       left: 50%;
       width: 900px;
       text-align: center;
-      margin: 120px 0 0 -450px; }
+      margin: 0 0 0 -450px; }
       @media screen and (max-width: 768px) {
         .main .slide-item1 .features {
           position: static;
@@ -606,8 +606,8 @@ footer {
         display: inline-block;
         text-align: center; }
         .main .slide-item1 .features li .icon {
-          width: 100px;
-          height: 100px;
+          width: 80px;
+          height: 80px;
           margin: 0 auto;
           background: transparent center no-repeat;
           background-size: cover; }
@@ -623,12 +623,13 @@ footer {
           .main .slide-item1 .features li {
             width: 50%; } }
         .main .slide-item1 .features li p {
-          font-size: 18px;
+          font-size: 16px;
           color: #ddd;
           font-weight: 300;
           margin-top: 20px; }
   .main .slide-item-email {
-    height: 306px; }
+    height: 30%;
+    min-height: 216px; }
     .main .slide-item-email .line {
       height: 6px;
       width: 100%;
@@ -639,101 +640,109 @@ footer {
         .main .slide-item-email .line {
           min-width: auto; } }
     .main .slide-item-email .content-wrap {
-      height: 300px;
+      position: relative;
+      height: 100%;
       background: #2E2E2E; }
-      .main .slide-item-email .content-wrap h1 {
-        padding-top: 50px;
-        font-size: 26px;
-        color: #fff;
-        text-align: center; }
-        @media screen and (max-width: 768px) {
-          .main .slide-item-email .content-wrap h1 {
-            font-size: 20px;
-            padding-top: 30px; } }
-      .main .slide-item-email .content-wrap p {
-        text-align: center;
-        color: #ddd;
-        margin-top: 40px; }
-        @media screen and (max-width: 768px) {
-          .main .slide-item-email .content-wrap p {
-            font-size: 14px;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            padding: 0 20px;
-            margin-top: 20px; } }
-      .main .slide-item-email .content-wrap .input-wrap {
-        text-align: center;
-        margin: 40px auto 0;
-        width: 532px;
-        font-size: 0; }
-        @media screen and (max-width: 768px) {
-          .main .slide-item-email .content-wrap .input-wrap {
-            width: 100%;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            padding: 0 20px; } }
-        .main .slide-item-email .content-wrap .input-wrap .input-box {
-          display: inline-block;
-          vertical-align: top;
-          width: 400px;
-          height: 36px;
-          border-radius: 18px;
-          overflow: hidden; }
-          @media screen and (max-width: 768px) {
-            .main .slide-item-email .content-wrap .input-wrap .input-box {
-              width: 70%; } }
-          .main .slide-item-email .content-wrap .input-wrap .input-box input {
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            border: none;
-            outline: none;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            padding-left: 20px;
-            font-size: 16px;
-            color: #333; }
-        .main .slide-item-email .content-wrap .input-wrap .submit-button {
-          display: inline-block;
-          vertical-align: top;
-          width: 120px;
-          height: 36px;
-          background: #1EB0FB;
-          line-height: 36px;
+      .main .slide-item-email .content-wrap .content {
+        position: absolute;
+        width: 600px;
+        height: 190px;
+        top: 50%;
+        left: 50%;
+        margin: -95px 0 0 -300px; }
+        .main .slide-item-email .content-wrap .content h1 {
+          padding-top: 20px;
+          font-size: 26px;
           color: #fff;
-          text-align: center;
-          font-size: 14px;
-          border-radius: 18px;
-          margin-left: 10px;
-          cursor: pointer;
-          -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease; }
+          text-align: center; }
           @media screen and (max-width: 768px) {
-            .main .slide-item-email .content-wrap .input-wrap .submit-button {
-              margin-left: 0;
+            .main .slide-item-email .content-wrap .content h1 {
+              font-size: 20px;
+              padding-top: 30px; } }
+        .main .slide-item-email .content-wrap .content p {
+          text-align: center;
+          color: #ddd;
+          margin-top: 25px; }
+          @media screen and (max-width: 768px) {
+            .main .slide-item-email .content-wrap .content p {
+              font-size: 14px;
               -webkit-box-sizing: border-box;
                       box-sizing: border-box;
-              width: 30%; } }
-          .main .slide-item-email .content-wrap .input-wrap .submit-button:hover {
-            -webkit-box-shadow: 5px 5px 10px #1f1f21;
-                    box-shadow: 5px 5px 10px #1f1f21; }
-      .main .slide-item-email .content-wrap .small {
-        width: 532px;
-        height: 12px;
-        margin: 10px auto 0;
-        font-size: 12px;
-        color: #aaa; }
-        @media screen and (max-width: 768px) {
-          .main .slide-item-email .content-wrap .small {
-            width: 100%;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            padding: 0 20px;
-            font-size: 10px; } }
-        .main .slide-item-email .content-wrap .small .tip {
-          float: left; }
-        .main .slide-item-email .content-wrap .small .privacy {
-          float: right; }
+              padding: 0 20px;
+              margin-top: 20px; } }
+        .main .slide-item-email .content-wrap .content .input-wrap {
+          text-align: center;
+          margin: 40px auto 0;
+          width: 532px;
+          font-size: 0; }
+          @media screen and (max-width: 768px) {
+            .main .slide-item-email .content-wrap .content .input-wrap {
+              width: 100%;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box;
+              padding: 0 20px; } }
+          .main .slide-item-email .content-wrap .content .input-wrap .input-box {
+            display: inline-block;
+            vertical-align: top;
+            width: 400px;
+            height: 36px;
+            border-radius: 18px;
+            overflow: hidden; }
+            @media screen and (max-width: 768px) {
+              .main .slide-item-email .content-wrap .content .input-wrap .input-box {
+                width: 70%; } }
+            .main .slide-item-email .content-wrap .content .input-wrap .input-box input {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              border: none;
+              outline: none;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box;
+              padding-left: 20px;
+              font-size: 16px;
+              color: #333; }
+          .main .slide-item-email .content-wrap .content .input-wrap .submit-button {
+            display: inline-block;
+            vertical-align: top;
+            width: 120px;
+            height: 36px;
+            background: #1EB0FB;
+            line-height: 36px;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
+            @media screen and (max-width: 768px) {
+              .main .slide-item-email .content-wrap .content .input-wrap .submit-button {
+                margin-left: 0;
+                -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                width: 30%; } }
+            .main .slide-item-email .content-wrap .content .input-wrap .submit-button:hover {
+              -webkit-box-shadow: 5px 5px 10px #1f1f21;
+                      box-shadow: 5px 5px 10px #1f1f21; }
+        .main .slide-item-email .content-wrap .content .small {
+          width: 532px;
+          height: 12px;
+          margin: 10px auto 0;
+          font-size: 12px;
+          color: #aaa; }
+          @media screen and (max-width: 768px) {
+            .main .slide-item-email .content-wrap .content .small {
+              width: 100%;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box;
+              padding: 0 20px;
+              font-size: 10px; } }
+          .main .slide-item-email .content-wrap .content .small .tip {
+            float: left; }
+          .main .slide-item-email .content-wrap .content .small .privacy {
+            float: right; }
   .main .modal {
     display: none;
     position: fixed;

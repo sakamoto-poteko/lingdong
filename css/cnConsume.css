@@ -681,8 +681,7 @@ footer {
           font-size: 100px;
           font-weight: 900;
           margin-bottom: .2em;
-          color: #fff;
-          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+          color: #111; }
           @media screen and (max-width: 768px) {
             .main .slide.hero .content h1 {
               font-size: 40px;
